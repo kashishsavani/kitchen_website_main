@@ -11,9 +11,12 @@ const HeroSection = () => {
   <div className="container">
     <div className="row align-items-center justify-content-md-start justify-content-lg-start justify-content-center">
       <div className="col-lg-6">
-        <h2 className="fw-bold kitchen-heading text-dark animate__animated animate__lightSpeedInLeft">
-          Premium Stainless Steel <br /> Kitchen Tools Since 1983
-        </h2>
+         <h2 className="fw-bold kitchen-heading  text-dark animate__animated animate__lightSpeedInLeft">
+            <span class="bordered-text">Premium Stainless Steel </span> <br />
+            <span className="kitchen-subheading">Kitchen Tools Since 1983".</span>
+         </h2>
+
+
         <p className="lead text-dark animate__animated animate__jackInTheBox hero-text">
           Explore our wide range of tools designed to make your tasks easier.
         </p>

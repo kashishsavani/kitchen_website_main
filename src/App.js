@@ -11,9 +11,9 @@ import FAQ from "./components/FAQ";
 
 function App() {
   return (
-    <Router>
+    <Router>  {/* Ensure the entire App is inside BrowserRouter */}
       <Routes>
-        {/* Use Layout for consistent Navbar and Footer */}
+        {/* Layout wraps all routes to provide Navbar/Footer */}
         <Route path="/" element={<Layout />}>
           <Route index element={
             <>
@@ -30,7 +30,6 @@ function App() {
           <Route path="product" element={<Product />} />
           <Route path="review" element={<ReviewCarousel />} />
           <Route path="faq" element={<FAQ />} />
-          
         </Route>
       </Routes>
     </Router>

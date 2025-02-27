@@ -15,7 +15,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg bg-light  py-3">
+    <nav className="navbar navbar-expand-lg bg-light  py-3  ">
       <div className="container">
         {/* Logo */}
         <Link className="navbar-brand" to="/">
@@ -30,12 +30,13 @@ const Navbar = () => {
           aria-controls="navbarNav"
           aria-expanded={isOpen}
           aria-label="Toggle navigation"
+          
         >
           <span className="navbar-toggler-icon"></span>
         </button>
 
         {/* Navigation Links */}
-        <div className={`collapse navbar-collapse ${isOpen ? "show" : ""}`} id="navbarNav">
+        <div className={`collapse bg-light  navbar-collapse ${isOpen ? "show" : ""}`} id="navbarNav">
           <ul className="navbar-nav mx-auto text-center">
             <li className="nav-item">
               <Link className="nav-link animate__animated animate__fadeIn py-2" to="/">Home</Link>
