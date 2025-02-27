@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -7,13 +7,18 @@
   padding: 50px 0;
 }
 
-
 .kitchen-heading {
   font-size: 2rem;
+  font-family: "Poppins", "Montserrat", "Helvetica Neue", sans-serif;
 }
 
 .hero-text {
   font-size: 1rem;
+  line-height: 3;
+}
+
+.kitchen-subheading {
+  font-size: 40px;
 }
 
 .bordered-text {
@@ -21,7 +26,7 @@
   position: relative;
   font-weight: bold;
   font-size: 40px;
-  z-index: 2; /* Ye text ko upar rakhega */
+  z-index: 2; /* Ensures text stays on top */
 }
 
 .bordered-text::before {
@@ -29,147 +34,18 @@
   position: absolute;
   width: 100%;
   height: 15px;
-  background-color: #FFB5C0;
-  top: 35px; /* Border ko neeche shift karne ke liye */
+  background-color: #ffb5c0;
+  top: 33px;
   left: 0;
-  z-index: -1; /* Border ko text ke neeche dikhane ke liye */
-}
-.bordered-text {
-  display: inline-block;
-  position: relative;
-  font-weight: bold;
-  z-index: 10; /* Higher z-index taake ye foreground me aaye */
+  z-index: -1; /* Places the border behind text */
 }
 
-.kitchen-subheading {
-  font-size: 40px;
-}
-
-.herosectioncontain{
+.herosectioncontain {
   width: auto;
   height: 600px;
   object-fit: cover;
   margin-top: -5%;
 }
-
-.kitchen-heading {
-  font-family: "Poppins", "Montserrat", "Helvetica Neue", sans-serif;
-}
-
-.hero-text {
-  font-size: 18px; /* Adjust as needed */
-  line-height: 3; /* Line spacing ko readable banane ke liye */
-}
-
-.hero-btn {
-  font-size: 16px;
-  padding: 10px 20px; /* Button size ke liye */
-  line-height: 1.8; /* Text aur button spacing ko balance karne ke liye */
-}
-
-@media (max-width: 1024px) {
-  .bordered-text {
-    font-size: 35px; /* Thoda chhota kar diya */
-  }
-
-  .bordered-text::before {
-    height: 10px; /* Border thoda patla */
-    top: 30px; /* Position adjust */
-  }
-
-  .kitchen-subheading {
-    font-size: 35px; /* Subtitle bhi responsive */
-  }
-
-  .hero-text {
-    font-size: 16px; /* Font thoda chhota */
-    line-height: 2.5; /* Line height adjust */
-  }
-
-  .hero-btn {
-    font-size: 14px; /* Button text chhota */
-    padding: 8px 16px; /* Button size adjust */
-  }
-
-  .herosectioncontain {
-    height: 500px; /* Section thoda chhota */
-  }
-}
-
-@media (max-width: 768px) {
-  .bordered-text {
-    font-size: 28px; /* Aur chhota kar diya */
-    margin-top: 10%;
-  }
-
-  .bordered-text::before {
-    height: 8px; /* Border aur patla */
-    top: 25px; /* Position adjust */
-  }
-
-  .kitchen-subheading {
-    font-size: 28px; /* Subtitle bhi chhota */
-  }
-
-  .hero-text {
-    font-size: 14px; /* Font aur chhota */
-    line-height: 2.2; /* Line height adjust */
-  }
-
-  
-
-  .herosectioncontain {
-    height: 350px;
-   
-  }
-
-  .d-flex {
-    flex-direction: column; /* Button aur content ko ek ke neeche ek kar diya */
-    /* align-items: center;  */
-  }
-
-  .hero-btn {
-    width: 100%; /* Button full width */
-    text-align: center;
-  }
-}
-
-
-@media (max-width: 425px) {
-  .herosectioncontain{
-    height: 250px;
-    margin-top: -10%;
-  }
-  .kitchen-heading {
-    display: flex;
-    flex-direction: column; /* Text ko column me lane ke liye */
-    align-items: center; /* Center align */
-    text-align: center; /* Center text */
-    line-height: 0;
-  }
-
-  .bordered-text {
-    font-size: 25px; /* Chhota size */
-    line-height: normal;
-  }
-
-  .bordered-text::before {
-    height: 6px; /* Border adjust */
-    top: 20px;
-  }
-
-  .kitchen-subheading {
-    font-size: 24px;
-    margin-top: 10px; /* Neeche shift kar diya */
-    line-height: normal;
-  }
-}
-
-
-
-
-
-/* /=================== */ 
 
 .hero-btn {
   font-size: 1rem;
@@ -178,21 +54,49 @@
   white-space: nowrap;
 }
 
-/* ========================== */
-/* Hero Image Styling */
-/* ========================== */
-
 .hero-image {
   width: 100%;
   height: auto;
-  max-width: 500px; /* Default max width */
+  max-width: 500px;
   display: block;
   margin: 0 auto;
 }
 
-/* ========================== */
-/* Responsive Design */
-/* ========================== */
+/* Large Screens (1024px and below) */
+@media (max-width: 1024px) {
+  .kitchen-heading {
+    font-size: 1.4rem;
+  }
+
+  .kitchen-subheading {
+    font-size: 35px;
+  }
+
+  .hero-text {
+    font-size: 0.85rem;
+    line-height: 2.5;
+  }
+
+  .hero-btn {
+    font-size: 0.8rem;
+    padding: 7px 12px;
+    width: 60%;
+    text-align: center;
+  }
+
+  .bordered-text {
+    font-size: 35px;
+  }
+
+  .bordered-text::before {
+    height: 10px;
+    top: 30px;
+  }
+
+  .herosectioncontain {
+    height: 500px;
+  }
+}
 
 /* Tablets (768px and below) */
 @media (max-width: 768px) {
@@ -200,13 +104,20 @@
     font-size: 1.8rem;
   }
 
+  .kitchen-subheading {
+    font-size: 28px;
+  }
+
   .hero-text {
     font-size: 0.95rem;
+    line-height: 2.2;
   }
 
   .hero-btn {
     font-size: 0.9rem;
     padding: 9px 18px;
+    width: 33%;
+    height: 39px;
   }
 
   .hero-image {
@@ -215,66 +126,86 @@
   }
 
   .herosectioncontain {
-    background-color: #F7EBED;
+    height: 350px;
+    background-color: #f7ebed;
+  }
+
+  .bordered-text {
+    font-size: 28px;
+    margin-top: 10%;
+  }
+
+  .bordered-text::before {
+    height: 8px;
+    top: 23px;
+  }
+
+  .d-flex {
+    flex-direction: column;
   }
 }
 
 /* Small Mobile (425px and below) */
 @media (max-width: 425px) {
+  .herosectioncontain {
+    height: 250px;
+    margin-top: -10%;
+    background-color: #f7ebed;
+  }
+
+  @media (max-width: 425px) {
+    .bordered-text {
+      font-size: 17px !important;
+      line-height: normal;
+    }
+
+    .bordered-text::before {
+      height: 5px;
+      top: 15px;
+    }
+  }
+
   .kitchen-heading {
-    font-size: 1.6rem;
-    display: flex;
+    font-size: 17px !important;
     width: 60%;
+    /* text-align: center;  */
+    line-height: normal;
+  }
+
+  .kitchen-subheading {
+    font-size: 15px;
+    margin-top: 10px;
+    line-height: normal;
+  }
+
+  .bordered-text {
+    font-size: 25px;
+    line-height: normal;
+  }
+
+  .bordered-text::before {
+    height: 5px;
+    top: 15px;
   }
 
   .hero-text {
     font-size: 0.9rem;
-    /* border: 2px solid red; */
     width: 50%;
-    display: none;
+    line-height: 0.9;
+    margin-left: 15px;
+    /* display: none; */
   }
 
   .hero-btn {
-    font-size: 0.85rem;
-    /* padding: 8px 15px; */
-    width: 100%;
+    font-size: 0.5rem;
+    width: 45%;
+    height: 40px;
+    margin-left: 20px;
+    display: none;
     text-align: center;
-  }
-
-  .hero-image {
-    max-width: 100%;
-  }
-
-  .herosectioncontain {
-    background-color: #F7EBED;
+    padding: 6px;
   }
 }
-
-/* Very Small Mobile (320px and below) */
-@media (max-width: 320px) {
-  .kitchen-heading {
-    font-size: 1.4rem;
-    
-  }
-
-  .hero-text {
-    font-size: 0.85rem;
-  }
-  @media (max-width: 320px) {
-    .hero-btn {
-      display: block;
-      width: auto;
-      height: 50px !important; /* Force height */
-      text-align: center;
-      font-size: 16px;
-      margin-top: 10px;
-      padding: 10px 20px;
-      /* line-height: 30px; Centers text inside the button */
-    }
-  }
-  
-}
-
 
 /* Mobile (375px and below) */
 @media (max-width: 375px) {
@@ -294,46 +225,97 @@
   }
 }
 
-/* Laptops (1024px and below) */
-@media (max-width: 1024px) {
+/* 320 screen ========================== */
+@media (max-width: 320px) {
+  .bordered-text::before {
+    height: 4px !important;
+    top: 10px !important;
+  }
+}
+@media (max-width: 320px) {
   .kitchen-heading {
-    font-size: 1.4rem;
-  }
-
-  .hero-text {
-    font-size: 0.85rem;
-  }
-
-  .hero-btn {
-    font-size: 0.8rem;
-    padding: 7px 12px;
-    width: 60%;
-    text-align: center;
+    font-size: 13px !important;
+    /* width: 100% !important; */
   }
 }
 
-/* Button Adjustments for Different Screen Sizes */
-@media (max-width: 768px) {
-  .hero-btn {
-    display: block;
-    /* margin: auto; */
-    width: 33%;
-    height: 39px;
+/* Very Small Mobile (320px and below) */
+
+@media (max-width: 320px) {
+  .kitchen-subheading {
+    font-size: 13px !important;
+    margin-top: 5px;
+
+    line-height: normal;
+  }
+
+  .bordered-text {
+    font-size: 13px !important;
+    line-height: normal;
+  }
+
+  .hero-text {
+    font-size: 0.75rem !important;
+    width: 80%;
+    line-height: 1.1;
     text-align: center;
-    /* justify-content: center; */
-    font-size: 16px;
-    /* padding: 6px; */
+    margin: 0 auto;
+  }
+
+  .hero-btn {
+    font-size: 0.6rem !important;
+    width: 50%;
+    height: 35px;
+    text-align: center;
+    padding: 5px;
   }
 }
 
 @media (max-width: 425px) {
-  .hero-btn {
-    display: block;
-    /* margin: auto; */
+  .herosectioncontain {
+    height: 250px;
+    margin-top: -10%;
+    background-color: #f7ebed;
+  }
+
+  .kitchen-heading {
+    font-size: 17px !important; /* Ensure higher priority */
+    width: 60%; /* Make it full width */
+    /* text-align: center; Center the text */
+    line-height: normal; /* Ensure text is readable */
+  }
+
+  .kitchen-subheading {
+    font-size: 15px;
+    margin-top: 10px;
+    line-height: normal;
+  }
+
+  .bordered-text {
+    font-size: 25px;
+    line-height: normal;
+  }
+
+  .bordered-text::before {
+    height: 5px;
+    top: 15px;
+  }
+
+  .hero-text {
+    font-size: 0.9rem;
     width: 50%;
+    line-height: 0.9;
+    margin-left: 15px;
+    /* display: none; */
+  }
+
+  .hero-btn {
+    font-size: 0.5rem;
+    width: 45%;
     height: 40px;
+    margin-left: 20px;
+    display: none;
     text-align: center;
-    font-size: 16px;
     padding: 6px;
   }
 }

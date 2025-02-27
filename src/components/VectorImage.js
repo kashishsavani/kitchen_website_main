@@ -1,4 +1,6 @@
 import React from "react";
+import "./VectorImage.css";
+
 
 const VectorImage = () => {
   return (

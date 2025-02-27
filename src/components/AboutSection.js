@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import "animate.css";
-import "../AboutSection.css"; // Import the CSS file
+import "../AboutSection.css"; 
 
 const AboutSection = () => {
   return (
