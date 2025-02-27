@@ -1,0 +1,95 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Product Grid Default */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+
+  
+  /* Responsive Grid Layout */
+  @media (max-width: 768px) {
+    .product {
+      padding-top: 50px; /* Adjust padding for spacing */
+    }
+  
+    .product h2 {
+      font-size: 1.8rem; /* Reduce heading size */
+    }
+  
+    .btn {
+      font-size: 14px; /* Decrease button size */
+      padding: 8px 12px; /* Adjust button padding */
+    }
+  
+    .row-cols-md-2 .col {
+      flex: 0 0 50%; /* Show 2 columns per row on medium screens */
+      max-width: 50%;
+    }
+  
+    .row-cols-lg-3 .col {
+      /* flex:  0 100%; Show 1 column per row on smaller screens */
+      max-width: 100%;
+    }
+  
+    .card {
+      margin: 0 auto; /* Center align the cards */
+      max-width: 90%; /* Reduce card width */
+    }
+  
+    .card-img-top {
+      height: 220px; /* Set fixed height for images */
+      object-fit: cover; /* Ensure image fills space properly */
+    }
+  
+    .small-text {
+      font-size: 13px; /* Adjust text size for better readability */
+    }
+  
+    .d-flex.justify-content-md-end {
+      justify-content: center !important; /* Center align See All button */
+    }
+  }
+  
+  
+  @media (max-width: 576px) {
+    .row-cols-md-2 > .col {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+  
+  /* Mobile (375px and below) */
+  @media (max-width: 375px) {
+    .row-cols-1 .col {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  
+    /* Adjust card size for better fit */
+    .card {
+      width: 90%;
+      margin: 0 auto;
+    }
+  
+    .card-img-top {
+      max-height: 200px;
+      object-fit: cover;
+    }
+  
+    .card-title {
+      font-size: 1rem;
+    }
+  
+    .btn {
+      font-size: 0.8rem;
+      padding: 6px 8px;
+    }
+  }
+  

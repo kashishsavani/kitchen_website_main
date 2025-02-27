@@ -1,0 +1,186 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.hero-section {
+  padding: 50px 0;
+}
+
+
+.kitchen-heading {
+  font-size: 2rem;
+}
+
+.hero-text {
+  font-size: 1rem;
+}
+
+/* /=================== */ */
+
+.hero-btn {
+  font-size: 1rem;
+  padding: 10px 20px;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+/* ========================== */
+/* Hero Image Styling */
+/* ========================== */
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  max-width: 500px; /* Default max width */
+  display: block;
+  margin: 0 auto;
+}
+
+/* ========================== */
+/* Responsive Design */
+/* ========================== */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+  .kitchen-heading {
+    font-size: 1.8rem;
+  }
+
+  .hero-text {
+    font-size: 0.95rem;
+  }
+
+  .hero-btn {
+    font-size: 0.9rem;
+    padding: 9px 18px;
+  }
+
+  .hero-image {
+    width: auto;
+    object-fit: contain;
+  }
+
+  .herosectioncontain {
+    background-color: #F7EBED;
+  }
+}
+
+/* Small Mobile (425px and below) */
+@media (max-width: 425px) {
+  .kitchen-heading {
+    font-size: 1.6rem;
+    display: flex;
+    width: 60%;
+  }
+
+  .hero-text {
+    font-size: 0.9rem;
+    /* border: 2px solid red; */
+    width: 50%;
+    display: none;
+  }
+
+  .hero-btn {
+    font-size: 0.85rem;
+    /* padding: 8px 15px; */
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-image {
+    max-width: 100%;
+  }
+
+  .herosectioncontain {
+    background-color: #F7EBED;
+  }
+}
+
+/* Very Small Mobile (320px and below) */
+@media (max-width: 320px) {
+  .kitchen-heading {
+    font-size: 1.4rem;
+    
+  }
+
+  .hero-text {
+    font-size: 0.85rem;
+  }
+  @media (max-width: 320px) {
+    .hero-btn {
+      display: block;
+      width: auto;
+      height: 50px !important; /* Force height */
+      text-align: center;
+      font-size: 16px;
+      margin-top: 10px;
+      padding: 10px 20px;
+      /* line-height: 30px; Centers text inside the button */
+    }
+  }
+  
+}
+
+
+/* Mobile (375px and below) */
+@media (max-width: 375px) {
+  .kitchen-heading {
+    font-size: 1.4rem;
+  }
+
+  .hero-text {
+    font-size: 0.85rem;
+  }
+
+  .hero-btn {
+    font-size: 0.8rem;
+    padding: 7px 12px;
+    width: 60%;
+    text-align: center;
+  }
+}
+
+/* Laptops (1024px and below) */
+@media (max-width: 1024px) {
+  .kitchen-heading {
+    font-size: 1.4rem;
+  }
+
+  .hero-text {
+    font-size: 0.85rem;
+  }
+
+  .hero-btn {
+    font-size: 0.8rem;
+    padding: 7px 12px;
+    width: 60%;
+    text-align: center;
+  }
+}
+
+/* Button Adjustments for Different Screen Sizes */
+@media (max-width: 768px) {
+  .hero-btn {
+    display: block;
+    /* margin: auto; */
+    width: 33%;
+    height: 39px;
+    text-align: center;
+    /* justify-content: center; */
+    font-size: 16px;
+    /* padding: 6px; */
+  }
+}
+
+@media (max-width: 425px) {
+  .hero-btn {
+    display: block;
+    /* margin: auto; */
+    width: 50%;
+    height: 40px;
+    text-align: center;
+    font-size: 16px;
+    padding: 6px;
+  }
+}

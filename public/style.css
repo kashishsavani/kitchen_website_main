@@ -1,0 +1,237 @@
+.hero-section {
+    background: url('./img/image 144.png') no-repeat center center/cover;
+    height: 100vh; /* Full screen height */
+    display: flex;
+    align-items: center;
+}
+
+
+@media (max-width: 991px) { /* Adjust for smaller screens */
+    .hero-section {
+        height: auto;
+        padding: 50px 0;
+        background-size: contain; /* Adjust background for mobile */
+        background-position: center;
+    }
+}
+
+/* hero end ////////////////////////////////////////// */
+
+.custom-margin {
+    margin-top: -12%;
+}
+
+
+/* product start ======================================================= */
+
+/* Product Section Background */
+.product {
+    background: #FFECEC;
+    padding: 50px 0;
+}
+
+/* Product Buttons */
+.btn-group .btn {
+    margin: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.small-text {
+    font-size: 15px; /* Adjust as needed */
+}
+
+/* Product is */
+.card {
+    border: none;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* WhatsApp Button */
+.btn-danger {
+    background: #E22026;
+    border: none;
+}
+
+.btn-danger:hover {
+    background: #C9171C;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {  /* Tablets */
+    .btn-group {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .btn-group .btn {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+.card{
+    background:  #FFECEC;
+    ;
+}
+.fa-square-whatsapp{
+    color: green;
+    font-size: 25px;
+}
+@media (max-width: 767px) {  /* Mobile */
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .card-body {
+        text-align: center;
+    }
+}
+
+
+/* product end ========================================== */
+/* .reviewcard ======================================= */
+
+.card-img-topp{
+width: 80px;
+height: 80px;
+margin: auto;
+}
+
+/* .revcardend =================================================== */
+.reviewmain{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inreview{
+    width: 90%;
+height: 600px;
+}
+
+.revcard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Rectangle{
+    width: 90%;
+    height: 300px;
+    
+}
+/* review card==================================== */
+
+.carousel {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    /* background-color: red !important; Button color */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.carousel-control-prev {
+    left: -50px; /* Adjust position */
+}
+
+.carousel-control-next {
+    right: -50px; /* Adjust position */
+}
+
+.card-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.card {
+    background-color: white !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+    border-radius: 10px;
+    padding: 15px;
+}
+
+
+.review{
+    text-align: center;
+    margin: 30px;
+    font-size: 35px;
+    border-bottom: 2px solid red;
+    /* width: 100px; */
+    font-weight: bold;
+}
+
+/* faq start ================================================ */
+
+
+.faq-accordion {
+    width: 50%;
+}
+
+@media (max-width: 768px) {
+    .faq-accordion {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+}
+
+.faq-header {
+    border-bottom: 3px solid red;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.accordion-button {
+    width: 100%;
+    border-left: 3px solid red !important;
+    background: #f8f9fa;
+    font-weight: bold;
+    border-bottom: 1px solid palevioletred;
+    
+}
+.accordion-button:focus {
+    box-shadow: none;
+}
+.accordion {
+    width: 50%;
+    margin: auto; /* Centers the accordion */
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* FOOTER START ========================================== */
+
+.footer {
+    /* background-color: #f8f9fa; */
+    padding: 40px 0;
+    margin-top: -10%;
+}
+.footer .social-icons i {
+    font-size: 20px;
+    margin-right: 15px;
+    color: #333;
+    transition: 0.3s;
+}
+.footer .social-icons i:hover {
+    color: red;
+}
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+.footer ul li {
+    margin-bottom: 10px;
+}
