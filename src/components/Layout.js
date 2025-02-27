@@ -7,14 +7,19 @@ import { Outlet } from "react-router-dom";
 const Layout = () => {
   const location = useLocation(); // Get current route
 
+  // Define routes where footer should be hidden
+  const hideFooterRoutes = new Set(["/about", "/review", "/faq"]);
+  const shouldShowFooter = !Array.from(hideFooterRoutes).some(route =>
+    location.pathname.startsWith(route)
+  );
+
   return (
     <>
       <Navbar />
-      <main>
-        <Outlet /> {/* This dynamically renders the matched route */}
-      </main>
-      {/* Show Footer only if not on the About, Review, or FAQ page */}
-      {!["/about", "/review", "/faq"].includes(location.pathname.toLowerCase()) && <Footer />}
+      <div className="content-wrapper">
+        <Outlet /> {/* Dynamically render matched route */}
+      </div>
+      {shouldShowFooter && <Footer />}
     </>
   );
 };
