@@ -7,7 +7,7 @@ import { faSquareWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { useLocation } from "react-router-dom";
 import ReviewCarousel from "./ReviewCarousel";
 import FAQ from "./FAQ";
-import VectorImage from "./VectorImage";
+import Footer from "./Footer";
 import Wave from "./Wave";
 import "../Product.css";
 import { RiWhatsappFill } from "react-icons/ri";
@@ -33,6 +33,7 @@ const Product = () => {
   const filteredProducts = selectedCategory === "All" ? products : products.filter((p) => p.name === selectedCategory);
 
   return (
+    <>
     <section className="product py-5 ">
   <div className="container text-center">
   <h2 className="product-heading text-dark animate__animated animate__fadeInDown">
@@ -85,14 +86,17 @@ const Product = () => {
       </div>
 
       {/* Render ReviewCarousel and FAQ only on the Product page */}
-      {location.pathname === "/product" && (
+      
+    </section>
+    {location.pathname === "/product" && (
         <>
           <ReviewCarousel />
           <FAQ />
           <Wave/>
+          <Footer/>
         </>
       )}
-    </section>
+    </>
   );
 };
 

@@ -5,13 +5,23 @@ import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import "animate.css";
 import { useEffect } from "react";
 import "../AboutSection.css"; 
+import ReviewCarousel from "./ReviewCarousel";
+import FAQ from "./FAQ";
+import Footer from "./Footer";
+import Wave from "./Wave";
+import { useLocation } from "react-router-dom";
+import Product from "./Product";
 
 const AboutSection = () => {
+
+  const location = useLocation();
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  
+
   return (
+    <>
     <section className="container about-section animate__animated animate__fadeIn">
      <div className="text-center">
   <h2 className="about-heading text-dark animate__animated animate__fadeInDown">
@@ -58,6 +68,15 @@ const AboutSection = () => {
         </div>
       </div>
     </section>
+    {location.pathname === "/about" && (
+        <>
+          <Product/>
+          <FAQ/>
+          <Wave/>
+          <Footer/>
+        </>
+      )}
+    </>
   );
 };
 

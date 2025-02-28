@@ -8,6 +8,10 @@ import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
+import FAQ from "./FAQ";
+import Wave from "./Wave";
+import Footer from "./Footer";
+import { useLocation } from "react-router-dom";
 
 // Sample reviews data (Grouped into slides)
 const reviews = [
@@ -24,6 +28,9 @@ const reviews = [
 ];
 
 const ReviewCarousel = () => {
+
+  const location = useLocation();
+
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
   // Detect screen size changes
@@ -37,6 +44,7 @@ const ReviewCarousel = () => {
   const displayedReviews = isMobile ? reviews.flat() : reviews;
 
   return (
+    <>
     <div className="reviewmain py-5">
       <div className="container text-center">
       <div className="mb-4">
@@ -86,6 +94,15 @@ const ReviewCarousel = () => {
         </div>
       </div>
     </div>
+    {location.pathname === "/review" && (
+        <>
+          
+          <FAQ />
+          <Wave/>
+          <Footer/>
+        </>
+      )}
+    </>
   );
 };
 
