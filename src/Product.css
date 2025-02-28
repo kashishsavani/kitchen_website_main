@@ -1,146 +1,133 @@
-
 .product-heading {
-  display: inline-block; /* Sirf text jitna width lega */
-  border-bottom: 2px solid red; 
-  padding-bottom: 5px; /* Border aur text ke beech gap */
+  display: inline-block;
+  border-bottom: 2px solid red;
+  padding-bottom: 5px;
 }
 
 .custom-bg {
-  background: rgba(255, 163, 165, 1) !important; 
+  background: rgba(255, 163, 165, 1) !important;
   /* border: 1px solid red;  */
   color: white;
   border-radius: 0%;
 }
-.card-img-top{
+.card-img-top {
   width: 100%;
   object-fit: cover;
   /* border: 2px solid red; */
 }
 
-
-
-
-
-
 .custom-card {
-  background: rgba(255, 236, 236, 1) !important; /* Light pink background */
+  background: rgba(255, 236, 236, 1) !important;
 }
 
 .card {
-  margin: 0 auto; /* Center align the cards */
-  max-width: 90%; /* Reduce card width */
+  margin: 0 auto;
+  max-width: 90%;
   border: none;
 }
 
 .card {
-  margin: 0 auto; /* Center align the cards */
-  max-width: 100%; /* Reduce card width */
+  margin: 0 auto;
+  max-width: 100%;
 }
 
 /* Product Grid Default */
 .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Responsive Grid Layout */
+@media (max-width: 768px) {
+  .product {
+    padding-top: 50px;
+  }
+
+  .product h2 {
+    font-size: 1.8rem;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .row-cols-md-2 .col {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .row-cols-lg-3 .col {
+    max-width: 100%;
+  }
+
+  .card {
+    margin: 0 auto;
+    max-width: 90%;
+  }
+
+  .card-img-top {
+    height: 290px;
+    object-fit: cover;
+  }
+
+  .small-text {
+    font-size: 13px;
+  }
+
+  .d-flex.justify-content-md-end {
+    justify-content: center !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .row-cols-md-2 > .col {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .card-img-top {
+    height: 290px;
+    object-fit: cover;
+    width: 85%;
+  }
+  .card-body {
+    width: 50%;
+    flex-direction: column;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    /* margin: 0 auto; */
+
+    margin-left: 38px;
+  }
+}
+
+/* Mobile (375px and below) */
+@media (max-width: 375px) {
+  .row-cols-1 .col {
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 
-
-  
-  /* Responsive Grid Layout */
-  @media (max-width: 768px) {
-    .product {
-      padding-top: 50px; /* Adjust padding for spacing */
-    }
-  
-    .product h2 {
-      font-size: 1.8rem; /* Reduce heading size */
-    }
-  
-    .btn {
-      font-size: 14px; /* Decrease button size */
-      padding: 8px 12px; /* Adjust button padding */
-    }
-  
-    .row-cols-md-2 .col {
-      flex: 0 0 50%; /* Show 2 columns per row on medium screens */
-      max-width: 50%;
-    }
-  
-    .row-cols-lg-3 .col {
-      /* flex:  0 100%; Show 1 column per row on smaller screens */
-      max-width: 100%;
-    }
-  
-    .card {
-      margin: 0 auto; /* Center align the cards */
-      max-width: 90%; /* Reduce card width */
-    }
-  
-    .card-img-top {
-      height: 290px; /* Set fixed height for images */
-      object-fit: cover; /* Ensure image fills space properly */
-    }
-  
-    .small-text {
-      font-size: 13px; /* Adjust text size for better readability */
-    }
-  
-    .d-flex.justify-content-md-end {
-      justify-content: center !important; /* Center align See All button */
-    }
-  }
-  
-  
-  @media (max-width: 576px) {
-    .row-cols-md-2 > .col {
-      flex: 0 0 100%;
-      max-width: 100%;
-    }
+  /* Adjust card size for better fit */
+  .card {
+    width: 90%;
+    margin: 0 auto;
   }
 
+  .card-img-top {
+    max-height: 250px;
+    object-fit: cover;
+  }
 
-  @media (max-width: 425px){
-    .card-img-top {
-      height: 290px; /* Set fixed height for images */
-      object-fit: cover; /* Ensure image fills space properly */
-      width: 85%;
-    }
-    .card-body{
-      width: 50%;
-      flex-direction: column;
-      display: flex;
-      /* margin: 0 auto; */
-      
-      margin-left: 38px;
-    }
+  .card-title {
+    font-size: 1rem;
   }
-  
-  
-  /* Mobile (375px and below) */
-  @media (max-width: 375px) {
-    .row-cols-1 .col {
-      flex: 0 0 100%;
-      max-width: 100%;
-    }
-  
-    /* Adjust card size for better fit */
-    .card {
-      width: 90%;
-      margin: 0 auto;
-    }
-  
-    .card-img-top {
-      max-height: 250px;
-      object-fit: cover;
-    }
-  
-    .card-title {
-      font-size: 1rem;
-    }
-  
-    .btn {
-      font-size: 0.8rem;
-      padding: 6px 8px;
-    }
+
+  .btn {
+    font-size: 0.8rem;
+    padding: 6px 8px;
   }
-  
+}

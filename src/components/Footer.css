@@ -1,65 +1,60 @@
 .footer {
-    position: relative; /* Default: Footer ko normal flow me rakhne ke liye */
-    z-index: 10; /* Other elements se upar dikhane ke liye */
-    /* background-color: white; Dark background */
-    color: black;
-    margin-top: -6%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 0;
-  }
-
-  .list-unstyled{
-    margin-top: 18px;
-  }
-  .location-info {
-    margin-top: 18px; /* Aap jitna chahein utna adjust karein */
-  }
-  .footer> .container{
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .contactinfo{
-    padding-left: 30px;
-    /* border: 1px solid red; */
-  }
-  
-  /* Agar footer ko fixed rakhna hai (bottom me stick karne ke liye) */
-  .footer.fixed {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000; /* Sabse upar dikhane ke liye */
-  }
-  
-
-  /* ✅ Responsive Fix for 1024px Screens */
-@media (max-width: 1024px) {
-    .footer > .container {
-        max-width: 80%; /* Container ko shrink karna */
-        flex-direction: column; /* Column layout for better alignment */
-        text-align: start;
-    }
-
-    .contactinfo {
-        padding-left: 20;
-        margin-top: 10px;
-    }
-    .company{
-        padding-left: 20px;
-    }
+  position: relative;
+  z-index: 10;
+  /* background-color: white; Dark background */
+  color: black;
+  margin-top: -6%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
 }
 
+.list-unstyled {
+  margin-top: 18px;
+}
+.location-info {
+  margin-top: 18px;
+}
+.footer > .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactinfo {
+  padding-left: 30px;
+  /* border: 1px solid red; */
+}
 
 .footer.fixed {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+@media (max-width: 1024px) {
+  .footer > .container {
+    max-width: 80%;
+    flex-direction: column;
+    text-align: start;
+  }
+
+  .contactinfo {
+    padding-left: 20;
+    margin-top: 10px;
+  }
+  .company {
+    padding-left: 20px;
+  }
+}
+
+.footer.fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }

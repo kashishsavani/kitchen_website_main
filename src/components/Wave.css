@@ -1,47 +1,42 @@
-
-
-
-
-    /* Wave container ko center align aur spacing dena */
+/* Wave container ko center align aur spacing dena */
 .wave {
-    width: 100%;
-    text-align: center;
-    margin-top: -10px; 
+  width: 100%;
+  text-align: center;
+  margin-top: -10px;
+}
+
+/* Image styling */
+.img-wave {
+  width: 100%;
+
+  height: auto;
+  opacity: 0.9;
+}
+
+/* Tablets (768px se chhoti screens) */
+@media (max-width: 768px) {
+  .wave {
+    margin-top: -13px;
   }
-  
-  /* Image styling */
   .img-wave {
-    width: 100%; 
-    
-    height: auto; 
-    opacity: 0.9; 
+    width: 100%;
   }
-  
-  
-  /* Tablets (768px se chhoti screens) */
-  @media (max-width: 768px) {
-    .wave {
-      margin-top: -13px;
-    }
-    .img-wave {
-      width: 100%; 
-    }
+}
+
+/* Mobile devices (576px se chhoti screens) */
+@media (max-width: 576px) {
+  .wave {
+    margin-top: -15px;
   }
-  
-  /* Mobile devices (576px se chhoti screens) */
-  @media (max-width: 576px) {
-    .wave {
-      margin-top: -15px; 
-    }
-    .img-wave {
-      width: 100%; 
-    }
+  .img-wave {
+    width: 100%;
   }
-  @media (max-width: 320px) {
-    .wave {
-      margin-top: -30px; 
-    }
-    .img-wave {
-      width: 100%;
-    }
+}
+@media (max-width: 320px) {
+  .wave {
+    margin-top: -30px;
   }
+  .img-wave {
+    width: 100%;
+  }
+}

@@ -97,7 +97,8 @@
 }
 
 /* Carousel Controls */
-.carousel-control-prev, .carousel-control-next {
+.carousel-control-prev,
+.carousel-control-next {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 50%;
   width: 40px;
@@ -109,7 +110,8 @@
   margin: auto;
 }
 
-.carousel-control-prev-icon, .carousel-control-next-icon {
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
   filter: invert(100%);
 }
 
@@ -162,19 +164,19 @@
     font-size: 0.9rem;
   }
 
-  .carousel-control-prev, .carousel-control-next {
+  .carousel-control-prev,
+  .carousel-control-next {
     width: 40px;
     height: 40px;
   }
 }
-
 
 @media (max-width: 375px) {
   .cardd {
     max-width: 185px;
     width: 100%;
   }
-  .reviewmain> .container{
+  .reviewmain > .container {
     margin-top: -60px;
   }
 }
@@ -185,21 +187,15 @@
     width: 100%;
   }
 }
- 
-
-
-
 
 .Rectangle {
-    width: 450px;
-    height: 300px;
-    /* margin: 10px; */
-  } 
+  width: 450px;
+  height: 300px;
+  /* margin: 10px; */
+}
 
-
- 
-  @media (max-width: 768px) {
-    .Rectangle{
-      display: none;
-    }
+@media (max-width: 768px) {
+  .Rectangle {
+    display: none;
   }
+}

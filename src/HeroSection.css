@@ -26,7 +26,7 @@
   position: relative;
   font-weight: bold;
   font-size: 40px;
-  z-index: 2; /* Ensures text stays on top */
+  z-index: 2;
 }
 
 .bordered-text::before {
@@ -37,7 +37,7 @@
   background-color: #ffb5c0;
   top: 33px;
   left: 0;
-  z-index: -1; /* Places the border behind text */
+  z-index: -1;
 }
 
 .herosectioncontain {
@@ -139,8 +139,6 @@
     height: 8px;
     top: 23px;
   }
-
- 
 }
 
 /* Small Mobile (425px and below) */
@@ -277,10 +275,10 @@
   }
 
   .kitchen-heading {
-    font-size: 17px !important; /* Ensure higher priority */
-    width: 60%; /* Make it full width */
+    font-size: 17px !important;
+    width: 60%;
     /* text-align: center; Center the text */
-    line-height: normal; /* Ensure text is readable */
+    line-height: normal;
   }
 
   .kitchen-subheading {

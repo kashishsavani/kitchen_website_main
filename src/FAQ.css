@@ -1,129 +1,121 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.FAQContainer {
+  max-width: 80%;
+  margin: auto;
+  height: auto;
+}
+
+/* Center align the header */
+.faq-header {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.faq-header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+.faq-header::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: red;
+  margin-top: 5px;
+}
+
+/* 425 responsive ===================== */
+
+@media (max-width: 425px) {
   .FAQContainer {
-    max-width: 80%;
-    margin: auto;
-    height: auto;
-    
+    margin-top: 10px;
+    width: auto;
   }
-  
-  /* Center align the header */
-  .faq-header {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 20px;
+
+  .accordion {
+    width: auto;
   }
 
   .faq-header {
-    position: relative;
-    display: flex;
-    flex-direction: column; /* Column me laane ke liye */
-    align-items: center; /* Center me laane ke liye */
-    padding-bottom: 5px; /* Text aur underline ke beech gap */
+    font-size: 1.8rem;
   }
-  
-  .faq-header::after {
-    content: "";
-    display: block;
-    width: 50px; /* Underline ka width */
-    height: 3px; 
-    background-color: red; 
-    margin-top: 5px; /* Text aur underline ke beech gap */
-  }
-  
-  
 
-
-
-  /* 425 responsive ===================== */
-
-
-  @media (max-width: 425px) {
-    .FAQContainer {
-      margin-top: 10px;
-      width: auto;
-    }
-  
-    .accordion {
-      width: auto; /* Adjusts width automatically */
-    }
-  
-    .faq-header {
-      font-size: 1.8rem;
-    }
-  
-    .accordion-button {
-      font-size: 0.9rem;
-      padding: 10px;
-    }
-  
-    .accordion-body {
-      font-size: 0.9rem;
-    }
+  .accordion-button {
+    font-size: 0.9rem;
+    padding: 10px;
   }
-  @media (max-width: 425px) {
-    .footer .row {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .footer .social-icons {
-      justify-content: center;
-    }
-  
-    .footer ul {
-      padding: 0;
-    }
+
+  .accordion-body {
+    font-size: 0.9rem;
   }
-  
-  
-  /* Responsive for 375px screens */
-  @media (max-width: 375px) {
-    .FAQContainer {
-      margin-top: 10px;
-      width: auto;
-      height: 450px;
-    }
-  
-    .accordion {
-      width: auto; /* Adjusts width automatically */
-    }
-  
-    .faq-header {
-      font-size: 1.8rem;
-    }
-  
-    .accordion-button {
-      font-size: 0.9rem;
-      padding: 10px;
-    }
-  
-    .accordion-body {
-      font-size: 0.9rem;
-    }
+}
+@media (max-width: 425px) {
+  .footer .row {
+    flex-direction: column;
+    text-align: center;
   }
-  
-  /* Responsive for 320px screens */
-  @media (max-width: 320px) {
-    .accordion {
-      width: auto;
-    }
-  
-    .faq-header {
-      font-size: 1.6rem;
-    }
-  
-    .accordion-button {
-      font-size: 0.85rem;
-      padding: 8px;
-    }
-  
-    .accordion-body {
-      font-size: 0.85rem;
-    }
+
+  .footer .social-icons {
+    justify-content: center;
   }
-  
+
+  .footer ul {
+    padding: 0;
+  }
+}
+
+/* Responsive for 375px screens */
+@media (max-width: 375px) {
+  .FAQContainer {
+    margin-top: 10px;
+    width: auto;
+    height: 450px;
+  }
+
+  .accordion {
+    width: auto;
+  }
+
+  .faq-header {
+    font-size: 1.8rem;
+  }
+
+  .accordion-button {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .accordion-body {
+    font-size: 0.9rem;
+  }
+}
+
+/* Responsive for 320px screens */
+@media (max-width: 320px) {
+  .accordion {
+    width: auto;
+  }
+
+  .faq-header {
+    font-size: 1.6rem;
+  }
+
+  .accordion-button {
+    font-size: 0.85rem;
+    padding: 8px;
+  }
+
+  .accordion-body {
+    font-size: 0.85rem;
+  }
+}

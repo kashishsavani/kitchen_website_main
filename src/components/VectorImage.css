@@ -1,32 +1,26 @@
-
- 
 @media (max-width: 320px) {
   .custom-margin {
-    margin-top: -100px; 
-    margin-bottom: 15px; 
+    margin-top: -100px;
+    margin-bottom: 15px;
   }
 
   .img-fluid {
-    max-width: auto !important; 
-    height: auto !important; 
-    display: block; 
-    margin: 0 auto; 
+    max-width: auto !important;
+    height: auto !important;
+    display: block;
+    margin: 0 auto;
   }
 }
 
-  
-  
-  
-  /* 425px Screen ke liye Responsive Styling */
-  @media (max-width: 425px) {
-    .custom-margin {
-      margin-top: -80px; 
-      margin-bottom: 20px;
-    }
-  
-    .img-fluid {
-      max-width: auto; 
-      height: auto; 
-    }
+/* 425px Screen ke liye Responsive Styling */
+@media (max-width: 425px) {
+  .custom-margin {
+    margin-top: -80px;
+    margin-bottom: 20px;
   }
-  
+
+  .img-fluid {
+    max-width: auto;
+    height: auto;
+  }
+}

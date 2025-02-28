@@ -33,7 +33,7 @@ const Product = () => {
   const filteredProducts = selectedCategory === "All" ? products : products.filter((p) => p.name === selectedCategory);
 
   return (
-    <section className="product py-5 min-vh-100">
+    <section className="product py-5 ">
   <div className="container text-center">
   <h2 className="product-heading text-dark animate__animated animate__fadeInDown">
     Product
