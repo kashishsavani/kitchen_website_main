@@ -37,7 +37,7 @@ const FAQ = () => {
   ];
 
   return (
-    <div className="container my-5 FAQContainer">
+    <div className="container my-5  FAQContainer">
       <h1 className="faq-header text-center">FAQ</h1>
       <div className="accordion mx-auto" id="faqAccordion" >
         {faqItems.map((item, index) => (

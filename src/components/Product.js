@@ -8,6 +8,7 @@ import { useLocation } from "react-router-dom";
 import ReviewCarousel from "./ReviewCarousel";
 import FAQ from "./FAQ";
 import VectorImage from "./VectorImage";
+import Wave from "./Wave";
 import "../Product.css";
 import { RiWhatsappFill } from "react-icons/ri";
 
@@ -88,7 +89,7 @@ const Product = () => {
         <>
           <ReviewCarousel />
           <FAQ />
-          <VectorImage />
+          <Wave/>
         </>
       )}
     </section>

@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF, faWhatsapp, faInstagram } from "@fortawesome/free-brands-svg-icons";
-import { faLocationDot, faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import {  faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FiPhone } from "react-icons/fi";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { CiMail } from "react-icons/ci";

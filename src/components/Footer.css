@@ -55,7 +55,7 @@
     }
 }
 
-/* Agar footer ko fixed rakhna hai (bottom pe stick karne ke liye) */
+
 .footer.fixed {
     position: fixed;
     bottom: 0;

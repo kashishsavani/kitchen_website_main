@@ -3,9 +3,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import "animate.css";
+import { useEffect } from "react";
 import "../AboutSection.css"; 
 
 const AboutSection = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <section className="container about-section animate__animated animate__fadeIn">
      <div className="text-center">

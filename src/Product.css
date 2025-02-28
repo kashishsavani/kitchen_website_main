@@ -1,7 +1,4 @@
-*{
-  margin: 0;
-  padding: 0;
-}
+
 .product-heading {
   display: inline-block; /* Sirf text jitna width lega */
   border-bottom: 2px solid red; 
@@ -9,7 +6,7 @@
 }
 
 .custom-bg {
-  background: rgba(255, 163, 165, 1) !important; /* Custom background color */
+  background: rgba(255, 163, 165, 1) !important; 
   /* border: 1px solid red;  */
   color: white;
   border-radius: 0%;

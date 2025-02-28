@@ -6,43 +6,42 @@
 .wave {
     width: 100%;
     text-align: center;
-    margin-top: -10px; /* Default top margin */
+    margin-top: -10px; 
   }
   
   /* Image styling */
   .img-wave {
-    width: 100%; /* Responsive full width */
+    width: 100%; 
     
-    height: auto; /* Aspect ratio maintain kare */
-    opacity: 0.9; /* Slight transparency */
+    height: auto; 
+    opacity: 0.9; 
   }
   
-  /* ✅ Responsive Media Queries */
   
   /* Tablets (768px se chhoti screens) */
   @media (max-width: 768px) {
     .wave {
-      margin-top: -13px; /* Top margin kam kare */
+      margin-top: -13px;
     }
     .img-wave {
-      width: 100%; /* Thoda chhota kare */
+      width: 100%; 
     }
   }
   
   /* Mobile devices (576px se chhoti screens) */
   @media (max-width: 576px) {
     .wave {
-      margin-top: -15px; /* Aur kam spacing */
+      margin-top: -15px; 
     }
     .img-wave {
-      width: 100%; /* Image ko screen ke according adjust kare */
+      width: 100%; 
     }
   }
   @media (max-width: 320px) {
     .wave {
-      margin-top: -30px; /* Aur kam spacing */
+      margin-top: -30px; 
     }
     .img-wave {
-      width: 100%; /* Image ko screen ke according adjust kare */
+      width: 100%;
     }
   }

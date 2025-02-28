@@ -10,6 +10,7 @@ import ReviewCarousel from "./components/ReviewCarousel";
 import FAQ from "./components/FAQ";
 import Wave from "./components/Wave";
 
+
 function App() {
   return (
     <Router>  {/* Ensure the entire App is inside BrowserRouter */}
