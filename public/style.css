@@ -209,7 +209,7 @@ height: 600px;
 }
 
 .faq-header {
-    border-bottom: 3px solid red;
+    /* border-bottom: 3px solid red; */
     text-align: center;
     margin-bottom: 20px;
 }

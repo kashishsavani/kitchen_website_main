@@ -2,10 +2,16 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF, faWhatsapp, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faLocationDot, faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { FiPhone } from "react-icons/fi";
+import { HiOutlineLocationMarker } from "react-icons/hi";
+import { CiMail } from "react-icons/ci";
+
+
+
 
 const Footer = () => {
   return (
-    <footer className="footer py-4">
+    <footer className="footer  py-4">
       <div className="container">
         <div className="row">
           {/* Company Info */}
@@ -16,8 +22,8 @@ const Footer = () => {
               customer satisfaction. We deliver reliable products and services that meet industry standards."
             </p>
             <div className="social-icons d-flex gap-3">
-              <FontAwesomeIcon icon={faFacebookF} className="text-primary fs-4" />
-              <FontAwesomeIcon icon={faWhatsapp} className="text-success fs-4" />
+              <FontAwesomeIcon icon={faFacebookF} className="text-danger fs-4" />
+              <FontAwesomeIcon icon={faWhatsapp} className="text-danger fs-4" />
               <FontAwesomeIcon icon={faInstagram} className="text-danger fs-4" />
             </div>
           </div>
@@ -26,13 +32,13 @@ const Footer = () => {
           <div className="col-lg-4 col-md-6 mb-4">
             <h2>Contact Info</h2>
             <p>
-              <FontAwesomeIcon icon={faLocationDot} className="me-2" /> 4-Patel Nagar, 80 Feet Road, Rajkot
+              <HiOutlineLocationMarker icon={faLocationDot} className=" text-danger me-2" /> 4-Patel Nagar, 80 Feet Road, Rajkot
             </p>
             <p>
-              <FontAwesomeIcon icon={faPhone} className="me-2" /> 75670 52199
+              <FiPhone icon={faPhone} className=" text-danger me-2" /> 75670 52199
             </p>
             <p>
-              <FontAwesomeIcon icon={faEnvelope} className="me-2" /> jyotiengineers@gmail.com
+              <CiMail icon={faEnvelope} className="text-danger me-2" /> jyotiengineers@gmail.com
             </p>
           </div>
 

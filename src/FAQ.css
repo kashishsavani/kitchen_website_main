@@ -16,6 +16,24 @@
     margin-bottom: 20px;
   }
 
+  .faq-header {
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Column me laane ke liye */
+    align-items: center; /* Center me laane ke liye */
+    padding-bottom: 5px; /* Text aur underline ke beech gap */
+  }
+  
+  .faq-header::after {
+    content: "";
+    display: block;
+    width: 50px; /* Underline ka width */
+    height: 3px; 
+    background-color: red; 
+    margin-top: 5px; /* Text aur underline ke beech gap */
+  }
+  
+  
 
 
 

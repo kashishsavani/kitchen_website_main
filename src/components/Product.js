@@ -9,6 +9,7 @@ import ReviewCarousel from "./ReviewCarousel";
 import FAQ from "./FAQ";
 import VectorImage from "./VectorImage";
 import "../Product.css";
+import { RiWhatsappFill } from "react-icons/ri";
 
 
 // Product Data
@@ -73,7 +74,7 @@ const Product = () => {
                     <FontAwesomeIcon icon={faIndianRupeeSign} /> {product.price}
                   </p>
                   <a href="#" className="btn btn-light fw-bold w-90 small-text">
-  <FontAwesomeIcon icon={faSquareWhatsapp} className="text-success" /> Order on WhatsApp
+  <RiWhatsappFill icon={faSquareWhatsapp} className="text-success" /> Order on WhatsApp
 </a>
                 </div>
               </div>

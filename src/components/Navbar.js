@@ -5,6 +5,10 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faLocationDot, faBars } from "@fortawesome/free-solid-svg-icons";
 import "animate.css";
+import { FiPhone } from "react-icons/fi";
+// import { CiLocationOn } from "react-icons/ci";
+import { HiOutlineLocationMarker } from "react-icons/hi";
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -65,10 +69,10 @@ const Navbar = () => {
           {/* Contact Details */}
           <div className="d-md-flex flex-column flex-md-row align-items-center text-center text-md-end mt-3 mt-md-0">
             <span className="me-md-3 d-block text-dark fw-bold">
-              <FontAwesomeIcon icon={faPhone} className="me-2" /> 9898765432
+              <FiPhone icon={faPhone} className="me-2 fw-bold fs-5 text-danger" /> 9898765432
             </span>
             <span className="d-block text-dark fw-bold">
-              <FontAwesomeIcon icon={faLocationDot} className="me-2" /> 4-A, Patel Nagar, Rajkot
+              <HiOutlineLocationMarker icon={faLocationDot} className="me-2 fw-bold fs-5 text-danger " /> 4-A, Patel Nagar, Rajkot
             </span>
           </div>
         </div>
