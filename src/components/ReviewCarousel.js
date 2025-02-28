@@ -43,7 +43,7 @@ const ReviewCarousel = () => {
           <img src="/img/Group 168.png" alt="" className="Rectangle mx-2" />
           <img src="/img/Group 169.png" alt="" className="Rectangle mx-2" />
         </div>
-        <h2 className="review text-danger">Review</h2>
+        <h2 className="review text-dark">Review</h2>
 
         {/* Bootstrap Carousel */}
         <div id="productCarousel" className="carousel slide" data-bs-ride="carousel">
@@ -53,17 +53,17 @@ const ReviewCarousel = () => {
                 <div className="card-group">
                   {/* If mobile, show one card per slide */}
                   {(isMobile ? [group] : group).map((review) => (
-                    <div className="cardd" key={review.id}>
+                    <div className="cardd mt-5" key={review.id}>
                       <img src={review.imgSrc} className="card-img-topp" alt={review.name} />
-                      <div className="card-body">
+                      <div className="card-bodyy">
                         <h5 className="card-title">{review.name}</h5>
-                        <p className="card-text">{review.text}</p>
+                        <p className="card-text mt-2">{review.text}</p>
                         <p className="card-text">
                           <small className="text-muted">{review.time}</small>
                         </p>
                         <div className="d-flex justify-content-center">
                           {[...Array(5)].map((_, i) => (
-                            <FontAwesomeIcon key={i} icon={faStar} className="text-warning" />
+                            <FontAwesomeIcon key={i} icon={faStar} className=" d-flex text-warning" />
                           ))}
                         </div>
                       </div>

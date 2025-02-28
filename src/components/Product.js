@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faIndianRupeeSign, faGreaterThan } from "@fortawesome/free-solid-svg-icons";
+import { faSquareWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { useLocation } from "react-router-dom";
 import ReviewCarousel from "./ReviewCarousel";
 import FAQ from "./FAQ";
@@ -32,19 +33,21 @@ const Product = () => {
   return (
     <section className="product py-5 min-vh-100">
   <div className="container text-center">
-    <h2 className="text-danger">Products</h2>
+  <h2 className="product-heading text-dark animate__animated animate__fadeInDown">
+    Product
+</h2>
         {/* Filter Buttons */}
-        <div className="d-flex flex-wrap justify-content-center gap-2 my-3">
-          <button className={`btn ${selectedCategory === "All" ? "btn-danger" : "btn-outline-danger"}`} onClick={() => setSelectedCategory("All")}>
+        <div className="d-flex flex-wrap text-light  justify-content-center gap-2 my-3">
+          <button className={`btn ${selectedCategory === "All" ? "btn-danger" : " custom-bg "}`} onClick={() => setSelectedCategory("All")}>
             All
           </button>
-          <button className={`btn ${selectedCategory === "Pipe and Wooden Handle Spatula" ? "btn-danger" : "btn-outline-danger"}`} onClick={() => setSelectedCategory("Pipe and Wooden Handle Spatula")}>
+          <button className={`btn ${selectedCategory === "Pipe and Wooden Handle Spatula" ? "  btn-danger" : " custom-bg "}`} onClick={() => setSelectedCategory("Pipe and Wooden Handle Spatula")}>
             Pipe and Wooden Handle Spatula
           </button>
-          <button className={`btn ${selectedCategory === "Goti Spatula" ? "btn-danger" : "btn-outline-danger"}`} onClick={() => setSelectedCategory("Goti Spatula")}>
+          <button className={`btn ${selectedCategory === "Goti Spatula" ? "btn-danger" : " custom-bg "}`} onClick={() => setSelectedCategory("Goti Spatula")}>
             Goti Spatula
           </button>
-          <button className={`btn ${selectedCategory === "Walking Stick" ? "btn-danger" : "btn-outline-danger"}`} onClick={() => setSelectedCategory("Walking Stick")}>
+          <button className={`btn ${selectedCategory === "Walking Stick" ? "btn-danger" : " custom-bg "}`} onClick={() => setSelectedCategory("Walking Stick")}>
             Walking Stick
           </button>
         </div>
@@ -60,18 +63,18 @@ const Product = () => {
         <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4 mt-4">
           {filteredProducts.map((product) => (
             <div className="col" key={product.id}>
-              <div className="card shadow-sm h-100">
+              <div className=" h-100 custom-card">
                 <img src={product.imgSrc} className="card-img-top p-3" alt={product.name} />
-                <div className="card-body text-center">
+                <div className="card-body text-start ">
                   <h5 className="card-title fw-bold">{product.name}</h5>
-                  <p className="mb-1 small">Size: {product.size}</p>
+                  <p className="mb-1 mt-2 small">Size: {product.size}</p>
                   <p className="mb-1 small">Length: {product.length}</p>
-                  <p className="text-danger fw-bold">
+                  <p className="text-danger mt-2 fw-bold">
                     <FontAwesomeIcon icon={faIndianRupeeSign} /> {product.price}
                   </p>
-                  <a href="#" className="btn btn-light fw-bold w-100 small-text">
-                    <FontAwesomeIcon icon={faWhatsapp} /> Order on WhatsApp
-                  </a>
+                  <a href="#" className="btn btn-light fw-bold w-90 small-text">
+  <FontAwesomeIcon icon={faSquareWhatsapp} className="text-success" /> Order on WhatsApp
+</a>
                 </div>
               </div>
             </div>

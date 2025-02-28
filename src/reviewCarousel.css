@@ -1,269 +1,134 @@
-
-*{
+/* Global Reset */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
-
 
 /* Review Section Styling */
 .reviewmain {
-    background-color: #f8f9fa;
-    padding: 50px 0;
-    height: auto;
-  }
-  
-  .review {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .inreview {
-    text-align: center;
-  }
-  
-  /* Review Images */
-  .Rectangle {
-    width: 450px;
-    height: 300px;
-    /* margin: 10px; */
-  }
-  .carousel-control-prev, .carousel-control-next {
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 50%; /* Rounded buttons */
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border:  1px solid palevioletred;
-    margin: auto;
+  background-color: #f8f9fa;
+  padding: 50px 15px;
+  height: auto;
+}
+
+.review {
+  display: inline-block;
+  border-bottom: 2px solid red;
+  padding-bottom: 5px;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.inreview {
+  text-align: center;
+}
+
+/* Card Styling */
+.cardd {
+  max-width: 280px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+  background: white;
+  padding: 50px 20px 20px;
+  text-align: center;
+  border: none;
+}
+
+.cardd:hover {
+  transform: translateY(-5px);
+}
+
+/* Card Image Styling */
+.card-img-topp {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  position: absolute;
+  top: -34px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  border: 3px solid white;
+  background: white;
+}
+
+/* Card Body Styling */
+.card-body {
+  text-align: center;
+  padding: 15px;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.text-muted {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+/* Card Group Layout */
+.card-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Star Rating */
+.d-flex.text-warning {
+  font-size: 14px;
+  margin: 0 2px;
+}
+
+.d-flex i {
+  font-size: 14px;
+  margin-right: 3px;
+}
+
+/* Carousel Controls */
+.carousel-control-prev, .carousel-control-next {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid palevioletred;
+  margin: auto;
 }
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
-    filter: invert(100%); /* Makes the arrow icons dark */
-}
-  
-  /* Card Group Styling */
-  .card-group {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-  }
-  
-  .cardd {
-    max-width: 250px;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .card:hover {
-    transform: translateY(-5px);
-  }
-  
-  /* Card Image */
-  .card-img-topp {
-    width: 60px;  /* Adjust width */
-    height: 60px; 
-    object-fit: cover; /* Ensure it maintains aspect ratio */
-    border-radius: 50%;
-    margin: 10px auto;
-    display: block;
+  filter: invert(100%);
 }
 
-  /* Card Text */
-  .card-body {
-    text-align: center;
-    padding: 15px;
-  }
-  
-  .card-title {
-    font-weight: bold;
-    font-size: 18px;
-  }
-  
-  .card-text {
-    font-size: 14px;
-    color: #555;
-  }
-  
-  /* Star Rating */
-  .d-flex i {
-    font-size: 14px;
-    margin-right: 3px;
-  }
-
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .card-group {
-      /* flex-direction: column; */
-      align-items: center;
-    }
-  
-    .card {
-      max-width: auto;
-    }
-  }
-  .custom-carousel {
-    height: auto; /* Default height */
-  }
-  
-  @media (max-width: 768px) {
-    .custom-carousel {
-      height: 300px !important; /* Set height to 300px on mobile */
-    }
-  
-    .custom-carousel .carousel-inner,
-    .custom-carousel .carousel-item {
-      height: 100%;
-    }
-  
-    .custom-carousel .card {
-      height: 100%;
-    }
-  }
-  /* Default Styling */
-.reviewmain {
-  padding: 50px 15px;
+/* Carousel Styling */
+.custom-carousel {
+  height: auto;
 }
 
-.card-group {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
-/* Ensuring responsiveness for tablets (max-width: 768px) */
+/* Responsive Design */
 @media (max-width: 768px) {
   .reviewmain {
     padding: 30px 10px;
-  }
-
-  /* Adjust carousel height and card layout */
-  .carousel-inner {
-    display: flex;
-    align-items: center;
-  }
-
-  .carousel-item {
-    text-align: center;
-  }
-  .Rectangle{
-    display: none;
-  }
-
-  .card-group {
-    flex-direction: column; /* Stack cards vertically */
-    align-items: center;
-  }
-
-  .card {
-    width: 90%; /* Adjust card width for better layout */
-    margin-bottom: 10px;
-  }
-
-  /* Ensure carousel controls are accessible */
-  .carousel-control-prev,
-  .carousel-control-next {
-    width: 40px;
-  }
-}
-
-
-
-/* Default Styles */
-.reviewmain {
-  padding: 50px 15px;
-}
-
-.card-group {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
-/* 🔹 Responsive Styling for Tablets (max-width: 768px) */
-@media (max-width: 768px) {
-  .reviewmain {
-    padding: 30px 10px;
-  }
-
-  /* Adjust carousel height */
-  #productCarousel {
-    height: auto; /* Allow flexible height */
-  }
-
-  .carousel-inner {
-    display: flex;
-    align-items: center;
-  }
-
-  .carousel-item {
-    text-align: center;
-  }
-
-  .card-group {
-    flex-direction: column; /* Stack cards vertically */
-    align-items: center;
-  
-  }
-  .reviewmain{
-    height: auto;
-  }
-
-  .card {
-    width: 90%; /* Adjust card width */
-    margin-bottom: 10px;
-  }
-
-  /* Ensure carousel controls are accessible */
-  .carousel-control-prev,
-  .carousel-control-next {
-    width: 40px;
-  }
-
-  /* Adjust image size */
-  .card-img-topp {
-    max-width: 100px; /* Smaller image */
-    margin: auto;
-  }
-
-  /* Reduce font sizes */
-  .card-title {
-    font-size: 1.2rem;
-  }
-
-  .card-text {
-    font-size: 0.9rem;
-  }
-  .reviewmain {
-    margin-top: -1%;
-  }
-}
-
-
-  
-@media (max-width: 768px) {
-  /* Reduce padding for smaller screens */
-  .reviewmain {
-    /* padding: 30px 10px; */
     margin-top: -1%;
   }
 
-  /* Hide extra images for small screens */
   .Rectangle {
     display: none;
   }
 
-  /* Adjust carousel height */
-  #productCarousel {
-    height: auto; /* Allow flexible height */
-  }
-
-  /* Center align carousel content */
   .carousel-inner {
     display: flex;
     align-items: center;
@@ -273,26 +138,22 @@
     text-align: center;
   }
 
-  /* Stack cards vertically */
   .card-group {
     flex-direction: column;
     align-items: center;
   }
 
-  /* Adjust card width and spacing */
   .card {
-    width: 90%; /* Make cards take full width */
+    width: 90%;
     margin-bottom: 10px;
   }
 
-  /* Reduce image size */
   .card-img-topp {
-    max-width: 80px; /* Smaller image */
+    max-width: 80px;
     height: 80px;
-    margin: 0 auto;
+    margin: auto;
   }
 
-  /* Reduce font sizes */
   .card-title {
     font-size: 1.2rem;
   }
@@ -301,17 +162,41 @@
     font-size: 0.9rem;
   }
 
-  /* Ensure carousel controls are properly positioned */
-  .carousel-control-prev,
-  .carousel-control-next {
+  .carousel-control-prev, .carousel-control-next {
     width: 40px;
     height: 40px;
+  }
+}
+
+
+@media (max-width: 375px) {
+  .cardd {
+    max-width: 185px;
+    width: 100%;
   }
 }
 
 @media (max-width: 320px) {
   .cardd {
     max-width: 185px;
-    width: 100%; /* Ensures it scales properly */
+    width: 100%;
   }
 }
+ 
+
+
+
+
+.Rectangle {
+    width: 450px;
+    height: 300px;
+    /* margin: 10px; */
+  } 
+
+
+ 
+  @media (max-width: 768px) {
+    .Rectangle{
+      display: none;
+    }
+  }

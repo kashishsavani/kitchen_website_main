@@ -8,9 +8,12 @@ import "../AboutSection.css";
 const AboutSection = () => {
   return (
     <section className="container about-section animate__animated animate__fadeIn">
-      <h2 className="text-center text-danger border-bottom border-danger border-2 pb-2 animate__animated animate__fadeInDown about-heading">
-        About
-      </h2>
+     <div className="text-center">
+  <h2 className="about-heading text-dark animate__animated animate__fadeInDown">
+    About
+  </h2>
+</div>
+
       <div className="row align-items-center mt-4 Engineerss">
         <div className="col-lg-6 text-center">
           <img
