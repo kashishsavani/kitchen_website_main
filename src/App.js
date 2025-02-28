@@ -8,6 +8,7 @@ import AboutSection from "./components/AboutSection";
 import Product from "./components/Product";
 import ReviewCarousel from "./components/ReviewCarousel";
 import FAQ from "./components/FAQ";
+import Wave from "./components/Wave";
 
 function App() {
   return (
@@ -23,13 +24,14 @@ function App() {
               <Product />
               <ReviewCarousel />
               <FAQ />
-              <VectorImage />
+              <Wave />
             </>
           } />
           <Route path="about" element={<AboutSection />} />
           <Route path="product" element={<Product />} />
           <Route path="review" element={<ReviewCarousel />} />
           <Route path="faq" element={<FAQ />} />
+          
         </Route>
       </Routes>
     </Router>

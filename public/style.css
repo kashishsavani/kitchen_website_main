@@ -13,7 +13,29 @@
 .navbar{
     height: 70px;
 }
-
+/* Wave container ko center align karna */
+.Wave {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px; /* Top se gap */
+  }
+  
+  /* Image responsive aur styling ke liye */
+  .img-wave {
+    width: 100%; /* Full width le par responsive rahe */
+    /* max-width: 600px; Maximum size limit */
+    height: auto; /* Aspect ratio maintain kare */
+    opacity: 0.9; /* Thoda transparency effect */
+    margin-top: -16%;
+  }
+  
+  /* Small screens (SM) ke liye margin-top adjust kare */
+  @media (max-width: 576px) {
+    .Wave {
+      margin-top: 10px; /* Small screens ke liye kam margin */
+    }
+  }
+  
 
 
 

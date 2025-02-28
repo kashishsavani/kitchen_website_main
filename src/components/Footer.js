@@ -5,6 +5,7 @@ import { faLocationDot, faPhone, faEnvelope } from "@fortawesome/free-solid-svg-
 import { FiPhone } from "react-icons/fi";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { CiMail } from "react-icons/ci";
+import "./Footer.css";
 
 
 
@@ -12,7 +13,7 @@ import { CiMail } from "react-icons/ci";
 const Footer = () => {
   return (
     <footer className="footer  py-4">
-      <div className="container">
+      <div className="container  footercontain">
         <div className="row">
           {/* Company Info */}
           <div className="col-lg-4 col-md-6 mb-4">
@@ -29,11 +30,11 @@ const Footer = () => {
           </div>
 
           {/* Contact Info */}
-          <div className="col-lg-4 col-md-6 mb-4">
+          <div className="col-lg-4 contactinfo footercontact col-md-6 mb-4">
             <h2>Contact Info</h2>
-            <p>
-              <HiOutlineLocationMarker icon={faLocationDot} className=" text-danger me-2" /> 4-Patel Nagar, 80 Feet Road, Rajkot
-            </p>
+            <p className="location-info">
+  <HiOutlineLocationMarker className="text-danger me-2" /> 4-Patel Nagar, 80 Feet Road, Rajkot
+</p>
             <p>
               <FiPhone icon={faPhone} className=" text-danger me-2" /> 75670 52199
             </p>
@@ -43,7 +44,7 @@ const Footer = () => {
           </div>
 
           {/* Company Links */}
-          <div className="col-lg-4 col-md-12">
+          <div className="col-lg-4 col-md-12 company">
             <h2>Company</h2>
             <ul className="list-unstyled">
               <li>Home</li>

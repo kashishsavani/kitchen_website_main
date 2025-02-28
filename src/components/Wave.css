@@ -1,0 +1,48 @@
+
+
+
+
+    /* Wave container ko center align aur spacing dena */
+.wave {
+    width: 100%;
+    text-align: center;
+    margin-top: -10px; /* Default top margin */
+  }
+  
+  /* Image styling */
+  .img-wave {
+    width: 100%; /* Responsive full width */
+    
+    height: auto; /* Aspect ratio maintain kare */
+    opacity: 0.9; /* Slight transparency */
+  }
+  
+  /* ✅ Responsive Media Queries */
+  
+  /* Tablets (768px se chhoti screens) */
+  @media (max-width: 768px) {
+    .wave {
+      margin-top: -13px; /* Top margin kam kare */
+    }
+    .img-wave {
+      width: 100%; /* Thoda chhota kare */
+    }
+  }
+  
+  /* Mobile devices (576px se chhoti screens) */
+  @media (max-width: 576px) {
+    .wave {
+      margin-top: -15px; /* Aur kam spacing */
+    }
+    .img-wave {
+      width: 100%; /* Image ko screen ke according adjust kare */
+    }
+  }
+  @media (max-width: 320px) {
+    .wave {
+      margin-top: -30px; /* Aur kam spacing */
+    }
+    .img-wave {
+      width: 100%; /* Image ko screen ke according adjust kare */
+    }
+  }
