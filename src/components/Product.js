@@ -133,7 +133,7 @@ const Product = () => {
               className={`btn ${selectedCategory === "stainless steel Goti Spatula" ? "btn-danger" : " custom-bg"}`}
               onClick={() => setSelectedCategory("stainless steel Goti Spatula")}
             >
-              Stainless Steel Goti Spatula
+               pipe And goti spatula
             </button>
 
             <button
@@ -148,14 +148,14 @@ const Product = () => {
               className={`btn ${selectedCategory === "stainless steel Adjustable Walking Stick" ? "btn-danger" : " custom-bg"}`}
               onClick={() => setSelectedCategory("stainless steel Adjustable Walking Stick")}
             >
-              Stainless Steel Adjustable Walking Stick
+              Stainless steel Walking stick
             </button>
 
             <button
               className={`btn ${selectedCategory === "stainless steel wooden handle laddle With Back Support" ? "btn-danger" : " custom-bg"}`}
               onClick={() => setSelectedCategory("stainless steel wooden handle laddle With Back Support")}
             >
-              Stainless Steel Wooden Handle Laddle With Back Support
+              Stainless steel wooden handle laddle
             </button>
           </div>
 
