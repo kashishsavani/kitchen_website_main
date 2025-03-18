@@ -103,6 +103,7 @@ const products = [
 ];
 
 
+
 const Product = () => {
   const location = useLocation();
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -111,6 +112,7 @@ const Product = () => {
   const filteredProducts = selectedCategory === "All"
     ? products
     : products.filter((p) => p.name.trim() === selectedCategory.trim());
+    
 
   return (
     <>
