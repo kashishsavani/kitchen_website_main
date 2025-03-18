@@ -10,7 +10,7 @@ import Wave from "./Wave";
 import "../Product.css";
 import { RiWhatsappFill } from "react-icons/ri";
 
-// ✅ Unique Product Data with consistent names
+
 const products = [
   {
     id: 1,
@@ -107,7 +107,7 @@ const Product = () => {
   const location = useLocation();
   const [selectedCategory, setSelectedCategory] = useState("All");
 
-  // ✅ Corrected filtering logic with `.trim()` for accurate matching
+  
   const filteredProducts = selectedCategory === "All"
     ? products
     : products.filter((p) => p.name.trim() === selectedCategory.trim());
