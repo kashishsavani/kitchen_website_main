@@ -24,7 +24,7 @@ const products = [
   },
   {
     id: 2,
-    name: "stainless steel Adjustable Walking Stick",
+    name: "stainless steel Walking Stick",
     Brand: "Jyoti",
     SteelGrade: "202",
     Size: "30\", 33\", 36\"",
@@ -68,7 +68,7 @@ const products = [
   },
   {
     id: 6,
-    name: "stainless steel Adjustable Walking Stick",
+    name: "stainless steel Walking Stick",
     Brand: "Jyoti",
     SteelGrade: "202",
     Size: "30\" to 36\"",
@@ -147,8 +147,8 @@ const Product = () => {
             
 
             <button
-              className={`btn ${selectedCategory === "stainless steel Adjustable Walking Stick" ? "btn-danger" : " custom-bg"}`}
-              onClick={() => setSelectedCategory("stainless steel Adjustable Walking Stick")}
+              className={`btn ${selectedCategory === "stainless steel Walking Stick" ? "btn-danger" : " custom-bg"}`}
+              onClick={() => setSelectedCategory("stainless steel Walking Stick")}
             >
               Stainless steel Walking stick
             </button>
