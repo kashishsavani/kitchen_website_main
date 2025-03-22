@@ -4,7 +4,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* .offer-banner {
+.offer-banner {
   position: relative;
   width: 400px;               
   height: 250px;              
@@ -49,7 +49,7 @@
   
   display: inline-block;
   transition: 0.3s;
-} */
+}
 
 
 /* Review Section Styling */
@@ -174,9 +174,7 @@
     margin-top: -1%;
   }
 
-  .Rectangle {
-    display: none;
-  }
+ 
 
   .carousel-inner {
     display: flex;
@@ -240,9 +238,9 @@
   height: 300px;
   /* margin: 10px; */
 }
-
-@media (max-width: 768px) {
-  .Rectangle {
-    display: none;
+@media (max-width: 425px) {
+  .offernone {
+    display: none !important;
   }
 }
+

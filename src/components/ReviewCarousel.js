@@ -80,13 +80,13 @@ const ReviewCarousel = () => {
 
   return (
     <>
-      <div className="reviewmain py-5">
+      <div className="reviewmain py-5 ">
         <div className="container text-center ">
-          <div className="mb-4">
+          {/* <div className="mb-4">
             <img src="/img/Group 168.png" alt="" className="Rectangle mx-2" />
             <img src="/img/Group 169.png" alt="" className="Rectangle mx-2" />
-          </div>
-          {/* <div className="d-flex  gap-5 justify-content-center">
+          </div> */}
+          <div className="d-flex offernone  gap-5 justify-content-center">
           <div className="offer-banner">
   <div className="offer-overlay">
     <h2>Bundle & Save</h2>
@@ -102,7 +102,7 @@ const ReviewCarousel = () => {
     <a href="#">Shop Now</a>
   </div>
   <img src="/img/Rectangle 294.png" alt="Bundle & Save" className=" Rectangle offer-img" /></div>
-</div> */}
+</div>
 
           <h2 className="review text-dark">Review</h2>
 
