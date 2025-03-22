@@ -16,7 +16,7 @@ const products = [
     name: "stainless steel Goti Spatula",
     Brand: "Jyoti",
     SteelGrade: "202",
-    Size: "30\", 33\", 36\"",
+    Size: "3.25",
     Finish: "Buff Finish smooth surfaces",
     Packing: "Packing with Ld Plastic Material or scratch Roll",
     MOQ: "6 Piece",
@@ -27,8 +27,6 @@ const products = [
     name: "stainless steel Walking Stick",
     Brand: "Jyoti",
     SteelGrade: "202",
-    // Size: "30\", 33\", 36\"",
-    Size : "30 to 36" ,
     Handle: "Plastic Handle",
     Finish: "Buff Finish smooth surfaces",
     Packing: "Packing with Ld Plastic Material or scratch Roll",
@@ -40,6 +38,7 @@ const products = [
     name: "stainless steel wooden handle Spatula",
     Brand: "Jyoti",
     SteelGrade: "202",
+    Size: "30",
     HandleType: "Colourful Wooden handle",
     Finish: "Buff Finish smooth surfaces",
     Packing: "Packing with Ld Plastic Material or scratch Roll",
@@ -59,47 +58,53 @@ const products = [
   }
 ];
 
+const sizeOptions = [
+  '3.25"', '3.25"', '3.25"', '3.25"', '4"', '4"', '5"', '5"', '6"', '6"', '6"', '8"'
+];
+
 const Product = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
-  const location = useLocation();  // ✅ useLocation ko initialize kiya
+  const location = useLocation();
 
   // 🛠️ Filter products
   const filteredProducts = selectedCategory === "All"
     ? products
     : products.filter((p) => p.name === selectedCategory);
 
-  // 🛠️ Repeat products until at least 8 show
+  // ✅ Random sizes only for "stainless steel Goti Spatula"
   const repeatProducts = () => {
     const repeated = [];
-  //   while (repeated.length < 8) {
-  //     repeated.push(...filteredProducts);
-  //   }
-  //   return repeated.slice(0, 8); 
-  // };
-  let repeatCount = 8;
+    
+    let repeatCount = 8; 
 
-  if (selectedCategory === "stainless steel Goti Spatula") {
-    repeatCount = 12;  // ✅ 12 products for Goti Spatula
-  } else if (selectedCategory === "stainless steel Walking Stick") {
-    repeatCount = 3;  // ✅ 3 products for Walking Stick
-  } else if (selectedCategory === "stainless steel wooden handle laddle With Back Support") {
-    repeatCount = 6;  // ✅ 6 products for wooden handle laddle
-  }
+    if (selectedCategory === "stainless steel Goti Spatula") {
+      repeatCount = 12;  // ✅ 12 cards for Goti Spatula
+    }
 
-  while (repeated.length < repeatCount) {
-    repeated.push(...filteredProducts);
-  }
+    while (repeated.length < repeatCount) {
+      repeated.push(...filteredProducts);
+    }
 
-  return repeated.slice(0, repeatCount);  
-};
+    const displayedProducts = repeated.slice(0, repeatCount);
+
+    // ✅ Random sizes only for Goti Spatula products
+    const productsWithRandomSizes = displayedProducts.map((product, index) => {
+      if (
+        selectedCategory === "stainless steel Goti Spatula" || 
+        selectedCategory === "stainless steel wooden handle Spatula"
+      ) {
+        return {
+          ...product,
+          Size: sizeOptions[index % sizeOptions.length]  // ✅ Random sizes
+        };
+      }
+      return product;  // ✅ Original size for other categories
+    });
+
+    return productsWithRandomSizes;
+  };
+
   const displayedProducts = repeatProducts();
-
-
-
-
-
-  
-
   return (
     <>
       <section className="product py-5">
