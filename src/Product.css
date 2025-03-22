@@ -3,6 +3,9 @@
   border-bottom: 2px solid red;
   padding-bottom: 5px;
 }
+.card {
+  background-color: #FFECEC !important;  /* ✅ Force color change */
+}
 
 .custom-bg {
   background: rgba(255, 163, 165, 1) !important;
