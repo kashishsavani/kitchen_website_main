@@ -21,7 +21,7 @@ const reviews = [
       name: "John Doe",
       text: "This is a wider card with supporting text below.",
       time: "Last updated 3 mins ago",
-      imgSrc: "/img/Ellipse 10.png",
+      imgSrc: "/img/Ellipse 9.png",
     },
     {
       id: 2,
@@ -35,7 +35,7 @@ const reviews = [
       name: "Alice Johnson",
       text: "This card has even longer content.",
       time: "Last updated 3 mins ago",
-      imgSrc: "/img/Ellipse 10.png",
+      imgSrc: "/img/Ellipse 100.png",
     },
   ],
   [
@@ -44,7 +44,7 @@ const reviews = [
       name: "Michael Brown",
       text: "Different card content for the second slide.",
       time: "Last updated 5 mins ago",
-      imgSrc: "/img/Ellipse 10.png",
+      imgSrc: "/img/Ellipse 9.png",
     },
     {
       id: 5,
@@ -58,7 +58,7 @@ const reviews = [
       name: "David Wilson",
       text: "More cards appearing in the second slide.",
       time: "Last updated 5 mins ago",
-      imgSrc: "/img/Ellipse 10.png",
+      imgSrc: "/img/Ellipse 100.png",
     },
   ],
 ];
