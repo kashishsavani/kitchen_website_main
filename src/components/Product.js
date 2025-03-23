@@ -79,6 +79,10 @@ const Product = () => {
 
     if (selectedCategory === "stainless steel Goti Spatula") {
       repeatCount = 12;  // ✅ 12 cards for Goti Spatula
+    } else if (selectedCategory === "stainless steel wooden handle laddle With Back Support") {
+      repeatCount = 6;    // ✅ 6 cards for wooden handle laddle
+    }else if (selectedCategory === "stainless steel Walking Stick") {
+      repeatCount = 3;    // ✅ 6 cards for wooden handle laddle
     }
 
     while (repeated.length < repeatCount) {
