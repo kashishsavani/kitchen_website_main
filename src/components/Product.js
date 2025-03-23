@@ -55,7 +55,7 @@ const products = [
     Packing: "Packing with Ld Plastic Material or scratch Roll",
     MOQ: "6 Piece",
     imgSrc: "/img/All Size 28 6.png"
-  }
+  },
 ];
 
 const sizeOptions = [
