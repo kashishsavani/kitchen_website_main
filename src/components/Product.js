@@ -28,6 +28,7 @@ const products = [
     name: "stainless steel Walking Stick",
     Brand: "Jyoti",
     SteelGrade: "202",
+    length:"35",
     Handle: "Plastic Handle",
     Finish: "Buff Finish smooth surfaces",
     Packing: "Packing with Ld Plastic Material or scratch Roll",
@@ -80,14 +81,14 @@ const handle = [
   "/img/All Size 21 1.png",
   "/img/All Size 22 1.png",
   "/img/All Size 18 1 (1).png",
-  "/img/All Size 25 1 (1).png",
+  // "/img/All Size 25 1 (1).png",
   "/img/All Size 16 1 (1).png",
   "/img/All Size 17 1 (1).png",
 
 ];
 
 const Goti = [
-  // "/img/All Size 01 5.png",
+ 
   "/img/All Size 01 5.png",
   "/img/All Size 325-20.png",
   "/img/All Size 325-25.png",
@@ -166,9 +167,14 @@ const Product = () => {
         //  Apply unique laddle images
         if (selectedCategory === "stainless steel wooden handle laddle With Back Support") {
           updatedProduct.imgSrc = laddleImages[index % laddleImages.length];
-        }else if (selectedCategory === "stainless steel wooden handle Spatula") {
-          // updatedProduct.imgSrc = handle[index % laddleImages.length];
-          // updatedProduct.imgSrc = handle[index % handle.length];
+        } else if (selectedCategory === "stainless steel wooden handle Spatula") {
+          // ✅ Sequential mapping without repetition
+          if (index < handle.length) {
+            updatedProduct.imgSrc = handle[index]; 
+          } else {
+            // Fallback to prevent repetition
+            updatedProduct.imgSrc = handle[index % handle.length];
+          }
         }else if (selectedCategory === "stainless steel Goti Spatula") {
           // updatedProduct.imgSrc = Goti[index % laddleImages.length];
           updatedProduct.imgSrc = Goti[index % Goti.length];
