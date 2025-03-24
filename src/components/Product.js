@@ -74,12 +74,12 @@ const laddleImages = [
 ];
 
 const handle = [
-  "/img/All Size 21 1.png",
+  "/img/All Size 19 5.png",
   "/img/All Size 16 1 (1).png",
-  "/img/All Size 15 1 (1).png",
+  "/img/All Size 21 1.png",
   "/img/All Size 22 1.png",
   "/img/All Size 18 1 (1).png",
-  "/img/All Size 21 1.png",
+  "/img/All Size 25 1 (1).png",
   "/img/All Size 16 1 (1).png",
   "/img/All Size 17 1 (1).png",
 
@@ -121,7 +121,7 @@ const sizeOptionss = [
   '3.25"', '3.25"', '3.25"', '3.25"', '4"', '5"', '6"', '8"'
 ];
 const lengthh = [
-  '15"', '20"', '25"', '30"', '26"', '44"', '51"', '79"'
+  '15"', '20"', '25"', '30"', '36"', '44"', '51"', '79"'
 ];
 const lengthhh = [
   'No.5"', 'No.6"', 'No.7"', 'No.8"','No.9"', 'No.10"'
