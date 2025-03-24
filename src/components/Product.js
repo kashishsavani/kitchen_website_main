@@ -102,9 +102,9 @@ const Goti = [
 
 const stic = [
  
- 
-  "/img/All Size 13 6.png",
   "/img/All Size 14 2.png",
+  "/img/All Size 13 6.png",
+ 
   "/img/All Size 14 1.png",
   
 ];
