@@ -59,6 +59,7 @@ const products = [
     MOQ: "6 Piece",
     imgSrc: "/img/All Size 28 6.png"
   },
+  
 ];
 
 
@@ -166,7 +167,8 @@ const Product = () => {
         if (selectedCategory === "stainless steel wooden handle laddle With Back Support") {
           updatedProduct.imgSrc = laddleImages[index % laddleImages.length];
         }else if (selectedCategory === "stainless steel wooden handle Spatula") {
-          updatedProduct.imgSrc = handle[index % laddleImages.length];
+          // updatedProduct.imgSrc = handle[index % laddleImages.length];
+          // updatedProduct.imgSrc = handle[index % handle.length];
         }else if (selectedCategory === "stainless steel Goti Spatula") {
           // updatedProduct.imgSrc = Goti[index % laddleImages.length];
           updatedProduct.imgSrc = Goti[index % Goti.length];
