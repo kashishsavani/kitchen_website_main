@@ -17,6 +17,7 @@ const products = [
     Brand: "Jyoti",
     SteelGrade: "202",
     Size: "3.25",
+    length:"15",
     Finish: "Buff Finish smooth surfaces",
     Packing: "Packing with Ld Plastic Material or scratch Roll",
     MOQ: "6 Piece",
@@ -38,7 +39,8 @@ const products = [
     name: "stainless steel wooden handle Spatula",
     Brand: "Jyoti",
     SteelGrade: "202",
-    Size: "30",
+    Size: "3.25",
+    length:"15",
     HandleType: "Colourful Wooden handle",
     Finish: "Buff Finish smooth surfaces",
     Packing: "Packing with Ld Plastic Material or scratch Roll",
@@ -50,6 +52,7 @@ const products = [
     name: "stainless steel wooden handle laddle With Back Support",
     Brand: "Jyoti",
     SteelGrade: "202",
+    length:"No.10",
     HandleType: "Colourful Wooden handle",
     Finish: "Buff Finish smooth surfaces",
     Packing: "Packing with Ld Plastic Material or scratch Roll",
@@ -70,10 +73,61 @@ const laddleImages = [
   "/img/All Size 28 6.png",
 ];
 
+const handle = [
+  "/img/All Size 21 1.png",
+  "/img/All Size 16 1 (1).png",
+  "/img/All Size 15 1 (1).png",
+  "/img/All Size 22 1.png",
+  "/img/All Size 18 1 (1).png",
+  "/img/All Size 21 1.png",
+  "/img/All Size 16 1 (1).png",
+  "/img/All Size 17 1 (1).png",
+
+];
+
+const Goti = [
+  "/img/All Size 01 5.png",
+  "/img/All Size 02 1 (1).png",
+  "/img/All Size 03 1 (1).png",
+  "/img/All Size 04 1 (1).png",
+  "/img/All Size 05 1 (1).png",
+  "/img/All Size 06 1 (1).png",
+  "/img/All Size 08 1 (1).png",
+  "/img/All Size 29 1.png",
+  "/img/All Size 09 1 (1).png",
+  "/img/All Size 10 1 (1).png",
+  "/img/All Size 11 1 (1).png",
+  // "/img/All Size 11 1.png",
+];
+
+const stic = [
+ 
+ 
+  "/img/All Size 13 6.png",
+  "/img/All Size 14 2.png",
+  "/img/All Size 14 1.png",
+  
+];
 
 
 const sizeOptions = [
   '3.25"', '3.25"', '3.25"', '3.25"', '4"', '4"', '5"', '5"', '6"', '6"', '6"', '8"'
+];
+const length = [
+  '15"', '20"', '25"', '30"', '27"', '33"', '39"', '39"', '44"', '42"', '52"', '79"'
+];
+
+const sizeOptionss = [
+  '3.25"', '3.25"', '3.25"', '3.25"', '4"', '5"', '6"', '8"'
+];
+const lengthh = [
+  '15"', '20"', '25"', '30"', '26"', '44"', '51"', '79"'
+];
+const lengthhh = [
+  'No.5"', 'No.6"', 'No.7"', 'No.8"','No.9"', 'No.10"'
+];
+const lengthhhh = [
+  '30"', '33"', '36"'
 ];
 
 const Product = () => {
@@ -110,15 +164,31 @@ const Product = () => {
         //  Apply unique laddle images
         if (selectedCategory === "stainless steel wooden handle laddle With Back Support") {
           updatedProduct.imgSrc = laddleImages[index % laddleImages.length];
+        }else if (selectedCategory === "stainless steel wooden handle Spatula") {
+          updatedProduct.imgSrc = handle[index % laddleImages.length];
+        }else if (selectedCategory === "stainless steel Goti Spatula") {
+          updatedProduct.imgSrc = Goti[index % laddleImages.length];
+        }
+        else if (selectedCategory === "stainless steel Walking Stick") {
+          updatedProduct.imgSrc = stic[index % laddleImages.length];
         }
     
         // Apply random sizes only for Spatula categories
-        if (
-          selectedCategory === "stainless steel Goti Spatula" || 
-          selectedCategory === "stainless steel wooden handle Spatula"
-        ) {
+        if (selectedCategory === "stainless steel Goti Spatula") {
           updatedProduct.Size = sizeOptions[index % sizeOptions.length];
+          updatedProduct.length = length[index % length.length];  
+        } else if (selectedCategory === "stainless steel wooden handle Spatula") {
+          updatedProduct.Size = sizeOptionss[index % sizeOptionss.length];
+          updatedProduct.length = lengthh[index % lengthh.length];
+        }else if (selectedCategory === "stainless steel wooden handle laddle With Back Support") {
+          // updatedProduct.Size = sizeOptionss[index % sizeOptionss.length];
+          updatedProduct.length = lengthhh[index % lengthhh.length];
         }
+        else if (selectedCategory === "stainless steel Walking Stick") {
+          // updatedProduct.Size = sizeOptionss[index % sizeOptionss.length];
+          updatedProduct.length = lengthhhh[index % lengthhhh.length];
+        }
+        
     
         return updatedProduct;
       });
@@ -184,6 +254,8 @@ const Product = () => {
                     <p className="mb-1 mt-2 small"><strong>Brand:</strong> {product.Brand}</p>
                     <p className="mb-1 small"><strong>Steel Grade:</strong> {product.SteelGrade}</p>
                     {product.Size && <p className="mb-1 small"><strong>Size:</strong> {product.Size}</p>}
+{product.length &&<p className="mb-1 small"><strong>Length:</strong> {product.length}</p>}
+
                     {product.Handle && <p className="mb-1 small"><strong>Handle:</strong> {product.Handle}</p>}
                     {product.HandleType && <p className="mb-1 small"><strong>Handle Type:</strong> {product.HandleType}</p>}
                     <p className="mb-1 small"><strong>Finish:</strong> {product.Finish}</p>
