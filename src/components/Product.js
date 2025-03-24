@@ -60,6 +60,58 @@ const products = [
     MOQ: "6 Piece",
     imgSrc: "/img/All Size 28 6.png"
   },
+
+  
+  {
+    id: 4,
+    name: "stainless steel wooden handle laddle With Back Support",
+    Brand: "Jyoti",
+    SteelGrade: "202",
+    length:"No.5",
+    HandleType: "Colourful Wooden handle",
+    Finish: "Buff Finish smooth surfaces",
+    Packing: "Packing with Ld Plastic Material or scratch Roll",
+    MOQ: "6 Piece",
+    imgSrc: "/img/All Size 23 2.png"
+  },
+  {
+    id: 3,
+    name: "stainless steel wooden handle Spatula",
+    Brand: "Jyoti",
+    SteelGrade: "202",
+    Size: "3.25",
+    length:"15",
+    HandleType: "Colourful Wooden handle",
+    Finish: "Buff Finish smooth surfaces",
+    Packing: "Packing with Ld Plastic Material or scratch Roll",
+    MOQ: "6 Piece",
+    imgSrc: "/img/All Size 19 5.png"
+  },
+  {
+    id: 2,
+    name: "stainless steel Walking Stick",
+    Brand: "Jyoti",
+    SteelGrade: "202",
+    length:"36",
+    Handle: "Plastic Handle",
+    Finish: "Buff Finish smooth surfaces",
+    Packing: "Packing with Ld Plastic Material or scratch Roll",
+    MOQ: "6 Piece",
+    imgSrc: "/img/All Size 14 2.png"
+  },
+  {
+    id: 1,
+    name: "stainless steel Goti Spatula",
+    Brand: "Jyoti",
+    SteelGrade: "202",
+    Size: "4",
+    length:"27",
+    Finish: "Buff Finish smooth surfaces",
+    Packing: "Packing with Ld Plastic Material or scratch Roll",
+    MOQ: "6 Piece",
+    imgSrc: "/img/All Size 4-27.png",
+  },
+ 
   
 ];
 
