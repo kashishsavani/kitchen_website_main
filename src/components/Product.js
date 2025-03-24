@@ -21,7 +21,7 @@ const products = [
     Finish: "Buff Finish smooth surfaces",
     Packing: "Packing with Ld Plastic Material or scratch Roll",
     MOQ: "6 Piece",
-    imgSrc: "/img/All Size 01 5.png"
+    imgSrc: "/img/All Size 01 5.png",
   },
   {
     id: 2,
@@ -86,18 +86,19 @@ const handle = [
 ];
 
 const Goti = [
+  // "/img/All Size 01 5.png",
   "/img/All Size 01 5.png",
-  "/img/All Size 02 1 (1).png",
-  "/img/All Size 03 1 (1).png",
-  "/img/All Size 04 1 (1).png",
-  "/img/All Size 05 1 (1).png",
-  "/img/All Size 06 1 (1).png",
-  "/img/All Size 08 1 (1).png",
-  "/img/All Size 29 1.png",
-  "/img/All Size 09 1 (1).png",
-  "/img/All Size 10 1 (1).png",
-  "/img/All Size 11 1 (1).png",
-  // "/img/All Size 11 1.png",
+  "/img/All Size 325-20.png",
+  "/img/All Size 325-25.png",
+  "/img/All Size 325-30.png",
+  "/img/All Size 4-27.png",
+  "/img/All Size 4-33.png",
+  "/img/All Size 07 2.png",
+  "/img/All Size 539.png",
+  "/img/All Size 5-44.png",
+  "/img/All Size 6-42.png",
+  "/img/All Size 6-52.png",
+  "/img/All Size 8-79.png",  
 ];
 
 const stic = [
@@ -111,7 +112,7 @@ const stic = [
 
 
 const sizeOptions = [
-  '3.25"', '3.25"', '3.25"', '3.25"', '4"', '4"', '5"', '5"', '6"', '6"', '6"', '8"'
+  '3.25"', '3.25"', '3.25"', '3.25"',  '4"', '4"','4"', '5"', '5"', '6"', '6"', '8"'
 ];
 const length = [
   '15"', '20"', '25"', '30"', '27"', '33"', '39"', '39"', '44"', '42"', '52"', '79"'
@@ -167,7 +168,9 @@ const Product = () => {
         }else if (selectedCategory === "stainless steel wooden handle Spatula") {
           updatedProduct.imgSrc = handle[index % laddleImages.length];
         }else if (selectedCategory === "stainless steel Goti Spatula") {
-          updatedProduct.imgSrc = Goti[index % laddleImages.length];
+          // updatedProduct.imgSrc = Goti[index % laddleImages.length];
+          updatedProduct.imgSrc = Goti[index % Goti.length];
+
         }
         else if (selectedCategory === "stainless steel Walking Stick") {
           updatedProduct.imgSrc = stic[index % laddleImages.length];
