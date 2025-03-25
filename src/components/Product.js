@@ -121,12 +121,12 @@ const products = [
 
 //  Unique images for laddle category
 const laddleImages = [
-  ["/img/Wooden Handle Laddle Photos/Laddle NO 5/1.jpg","/img/Wooden Handle Laddle Photos/Laddle NO 5/2.webp","/img/Wooden Handle Laddle Photos/Laddle NO 5/3.jpg","/img/Wooden Handle Laddle Photos/Laddle NO 5/All Size 23.jpg"],
-  ["/img/Wooden Handle Laddle Photos/Laddle NO 6/6.jpg","/img/Wooden Handle Laddle Photos/Laddle NO 6/All Size 24.jpg"],
-  ["/img/Wooden Handle Laddle Photos/Laddle NO 7/All Size 25.jpg"],
-  ["/img/Wooden Handle Laddle Photos/Laddle NO 8/1e.webp","/img/Wooden Handle Laddle Photos/Laddle NO 8/All Size 26.jpg"],
-  ["/img/Wooden Handle Laddle Photos/Laddle NO 5/1.jpg","/img/All Size 27 1.png"],
-  ["/img/Wooden Handle Laddle Photos/Laddle NO 8/1e.webp","/img/All Size 28 6.png"],
+  ["/img/Laddle NO 5/1.jpg","/img/Laddle NO 5/2.webp","/img/Laddle NO 5/3.jpg","/img/Laddle NO 5/All Size 23.jpg"],
+  ["/img/Laddle NO 6/6.jpg","/img/Laddle NO 6/All Size 24.jpg"],
+  ["/img/Laddle NO 7/All Size 25.jpg"],
+  ["/img/Laddle NO 8/1e.webp","/img/Laddle NO 8/All Size 26.jpg"],
+  ["/img/Laddle NO 5/1.jpg","/img/All Size 27 1.png"],
+  ["/img/Laddle NO 8/1e.webp","/img/All Size 28 6.png"],
 ];
 
 const handle = [
