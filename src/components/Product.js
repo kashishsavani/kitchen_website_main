@@ -9,6 +9,7 @@ import Footer from "./Footer";
 import Wave from "./Wave";
 import "../Product.css";
 import { RiWhatsappFill } from "react-icons/ri";
+import ImageSlider from "./ImageSlider";
 
 const products = [
   {
@@ -21,7 +22,7 @@ const products = [
     Finish: "Buff Finish smooth surfaces",
     Packing: "Packing with Ld Plastic Material or scratch Roll",
     MOQ: "6 Piece",
-    imgSrc: "/img/All Size 01 5.png",
+    imgSrc: ["/img/All Size 01 5.png", "/img/Goti Spatula/3+15/1.jpg", "/img/Goti Spatula/3+15/2.jpg", "/img/Goti Spatula/3+15/3.jpg", "/img/Goti Spatula/3+15/4.jpg"],
     
   },
   {
@@ -34,7 +35,7 @@ const products = [
     Finish: "Buff Finish smooth surfaces",
     Packing: "Packing with Ld Plastic Material or scratch Roll",
     MOQ: "6 Piece",
-    imgSrc: "/img/All Size 14 1.png"
+    imgSrc:[ "/img/All Size 14 1.png"]
   },
   {
     id: 3,
@@ -47,7 +48,7 @@ const products = [
     Finish: "Buff Finish smooth surfaces",
     Packing: "Packing with Ld Plastic Material or scratch Roll",
     MOQ: "6 Piece",
-    imgSrc: "/img/All Size 19 5.png"
+    imgSrc: ["/img/All Size 19 5.png"]
   },
   {
     id: 4,
@@ -59,12 +60,12 @@ const products = [
     Finish: "Buff Finish smooth surfaces",
     Packing: "Packing with Ld Plastic Material or scratch Roll",
     MOQ: "6 Piece",
-    imgSrc: "/img/All Size 28 6.png"
+    imgSrc: ["/img/All Size 28 6.png"]
   },
 
   
   {
-    id: 4,
+    id: 5,
     name: "stainless steel wooden handle laddle With Back Support",
     Brand: "Jyoti",
     SteelGrade: "202",
@@ -76,7 +77,7 @@ const products = [
     imgSrc: "/img/All Size 23 2.png"
   },
   {
-    id: 3,
+    id: 6,
     name: "stainless steel wooden handle Spatula",
     Brand: "Jyoti",
     SteelGrade: "202",
@@ -89,7 +90,7 @@ const products = [
     imgSrc: "/img/All Size 19 5.png"
   },
   {
-    id: 2,
+    id: 7,
     name: "stainless steel Walking Stick",
     Brand: "Jyoti",
     SteelGrade: "202",
@@ -101,7 +102,7 @@ const products = [
     imgSrc: "/img/All Size 14 2.png"
   },
   {
-    id: 1,
+    id: 8,
     name: "stainless steel Goti Spatula",
     Brand: "Jyoti",
     SteelGrade: "202",
@@ -110,7 +111,7 @@ const products = [
     Finish: "Buff Finish smooth surfaces",
     Packing: "Packing with Ld Plastic Material or scratch Roll",
     MOQ: "6 Piece",
-    imgSrc: "/img/All Size 4-27.png",
+    imgSrc: ["/img/All Size 4-27.png", "/img/Goti Spatula/3+15/1.jpg","/img/Goti Spatula/3+15/2.jpg"],
   },
  
   
@@ -120,49 +121,49 @@ const products = [
 
 //  Unique images for laddle category
 const laddleImages = [
-  "/img/All Size 23 2.png",
-  "/img/All Size 24 1.png",
-  "/img/All Size 25 1.png",
-  "/img/All Size 26 1.png",
-  "/img/All Size 27 1.png",
-  "/img/All Size 28 6.png",
+  ["/img/Wooden Handle Laddle Photos/Laddle NO 5/1.jpg","/img/Wooden Handle Laddle Photos/Laddle NO 5/2.webp","/img/Wooden Handle Laddle Photos/Laddle NO 5/3.jpg","/img/Wooden Handle Laddle Photos/Laddle NO 5/All Size 23.jpg"],
+  ["/img/Wooden Handle Laddle Photos/Laddle NO 6/6.jpg","/img/Wooden Handle Laddle Photos/Laddle NO 6/All Size 24.jpg"],
+  ["/img/Wooden Handle Laddle Photos/Laddle NO 7/All Size 25.jpg"],
+  ["/img/Wooden Handle Laddle Photos/Laddle NO 8/1e.webp","/img/Wooden Handle Laddle Photos/Laddle NO 8/All Size 26.jpg"],
+  ["/img/Wooden Handle Laddle Photos/Laddle NO 5/1.jpg","/img/All Size 27 1.png"],
+  ["/img/Wooden Handle Laddle Photos/Laddle NO 8/1e.webp","/img/All Size 28 6.png"],
 ];
 
 const handle = [
-  "/img/All Size 19 5.png",
-  "/img/All Size 20 2.png",
-  "/img/All Size 21 1.png",
-  "/img/All Size 22 1.png",
-  "/img/All Size 18 1 (1).png",
+  ["/img/Wooden Handle Spatula/3+15/1.jpg","/img/Wooden Handle Spatula/3+15/2.png","/img/Wooden Handle Spatula/3+15/3.jpg","/img/Wooden Handle Spatula/3+15/4.jpg","/img/Wooden Handle Spatula/3+15/5.jpg"],
+  ["/img/Wooden Handle Spatula/3+20/1.jpg","/img/Wooden Handle Spatula/3+20/2.png","/img/Wooden Handle Spatula/3+20/3.jpg","/img/Wooden Handle Spatula/3+20/4.jpg","/img/Wooden Handle Spatula/3+20/5.jpg"],
+  ["/img/Wooden Handle Spatula/3+25/1.jpg","/img/Wooden Handle Spatula/3+25/2.png","/img/Wooden Handle Spatula/3+25/3.jpg","/img/Wooden Handle Spatula/3+25/4.jpg","/img/Wooden Handle Spatula/3+25/5.jpg"],
+  ["/img/Wooden Handle Spatula/3+30/1.jpg","/img/Wooden Handle Spatula/3+30/2.png","/img/Wooden Handle Spatula/3+30/3.jpg","/img/Wooden Handle Spatula/3+30/4.jpg","/img/Wooden Handle Spatula/3+30/5.jpg"],
+  ["/img/Wooden Handle Spatula/4+36/1.jpg","/img/Wooden Handle Spatula/4+36/2.jpg","/img/Wooden Handle Spatula/4+36/3.jpg","/img/Wooden Handle Spatula/4+36/4.jpg","/img/Wooden Handle Spatula/4+36/5.jpg"],
   // "/img/All Size 25 1 (1).png",
-  "/img/All Size 15 2.png",
-  "/img/All Size 16 1 (1).png",
-  "/img/All Size 17 1 (1).png",
+  ["/img/Wooden Handle Spatula/5+44/1.jpg","/img/Wooden Handle Spatula/5+44/2.jpg","/img/Wooden Handle Spatula/5+44/3.jpg","/img/Wooden Handle Spatula/5+44/4.jpg","/img/All Size 15 2.png"],
+  ["/img/Wooden Handle Spatula/6+51/1.jpg","/img/Wooden Handle Spatula/6+51/2.jpg","/img/Wooden Handle Spatula/6+51/3.jpg","/img/Wooden Handle Spatula/6+51/4.jpg","/img/All Size 16 1 (1).png"],
+  ["/img/Wooden Handle Spatula/5+44/1.jpg","/img/Wooden Handle Spatula/3+25/4.jpg","/img/All Size 17 1 (1).png"],
   
 ];
 
 const Goti = [
  
-  "/img/All Size 01 5.png",
-  "/img/All Size 325-20.png",
-  "/img/All Size 325-25.png",
-  "/img/All Size 325-30.png",
-  "/img/All Size 4-27.png",
-  "/img/All Size 4-33.png",
-  "/img/All Size 07 2.png",
-  "/img/All Size 539.png",
-  "/img/All Size 5-44.png",
-  "/img/All Size 6-42.png",
-  "/img/All Size 6-52.png",
-  "/img/All Size 8-79.png",  
+  ["/img/Goti Spatula/3+15/1.jpg","/img/Goti Spatula/3+15/2.png","/img/Goti Spatula/3+15/3.jpg","/img/Goti Spatula/3+15/4.jpg","/img/Goti Spatula/3+15/5.jpg"],
+  ["/img/Goti Spatula/3+20/1.jpg","/img/Goti Spatula/3+20/2.png","/img/Goti Spatula/3+20/3.jpg","/img/Goti Spatula/3+20/4.jpg","/img/Goti Spatula/3+20/5.jpg"],
+  ["/img/Goti Spatula/3+25/1.jpg","/img/Goti Spatula/3+25/2.png","/img/Goti Spatula/3+25/3.jpg","/img/Goti Spatula/3+25/4.jpg","/img/Goti Spatula/3+25/5.jpg"],
+ ["/img/Goti Spatula/3+30/1.jpg","/img/Goti Spatula/3+30/2.png","/img/Goti Spatula/3+30/3.jpg","/img/Goti Spatula/3+30/4.jpg","/img/Goti Spatula/3+30/5.jpg"],
+  ["/img/Goti Spatula/4+27/1.jpg","/img/Goti Spatula/4+27/2.jpg","/img/Goti Spatula/4+27/3.jpg","/img/Goti Spatula/4+27/4.jpg","/img/Goti Spatula/4+27/5.jpg"],
+  ["/img/Goti Spatula/4+33/1.jpg","/img/Goti Spatula/4+33/2.jpg","/img/Goti Spatula/4+33/3.jpg","/img/Goti Spatula/4+33/4.jpg","/img/Goti Spatula/4+33/5.jpg"],
+  ["/img/Goti Spatula/4+39/1.jpg","/img/Goti Spatula/4+39/2.jpg","/img/Goti Spatula/4+39/3.jpg","/img/Goti Spatula/4+39/4.jpg","/img/Goti Spatula/4+39/5.jpg"],
+  ["/img/Goti Spatula/5+39/1.jpg","/img/Goti Spatula/5+39/2.jpg","/img/Goti Spatula/5+39/3.jpg","/img/Goti Spatula/5+39/4.jpg","/img/Goti Spatula/5+39/5.jpg"],
+  ["/img/Goti Spatula/5+44/1.jpg","/img/Goti Spatula/5+44/2.jpg","/img/Goti Spatula/5+44/3.jpg","/img/Goti Spatula/5+44/4.jpg","/img/Goti Spatula/5+44/5.jpg"],
+  ["/img/Goti Spatula/5+44/1.jpg","/img/Goti Spatula/5+44/2.jpg","/img/Goti Spatula/5+44/3.jpg","/img/Goti Spatula/5+44/4.jpg","/img/Goti Spatula/5+44/5.jpg"],
+  ["/img/Goti Spatula/6+52/1.jpg","/img/Goti Spatula/6+52/2.jpg","/img/Goti Spatula/6+52/3.jpg","/img/Goti Spatula/6+52/4.jpg","/img/Goti Spatula/6+52/5.jpg"],
+  ["/img/Goti Spatula/6+42/1.jpg","/img/Goti Spatula/6+42/2.jpg","/img/Goti Spatula/6+42/3.jpg","/img/Goti Spatula/6+42/4.jpg","/img/Goti Spatula/6+42/5.jpg"], 
 ];
 
 const stic = [
  
-  "/img/All Size 14 2.png",
-  "/img/All Size 13 6.png",
+  ["/img/All Size 14 2.png","/img/All Size 14 2.png"],
+  ["/img/All Size 13 6.png","/img/All Size 13 6.png"],
  
-  "/img/All Size 14 1.png",
+  ["/img/All Size 14 1.png","/img/All Size 14 1.png"],
   
 ];
 
@@ -321,7 +322,11 @@ const Product = () => {
             {displayedProducts.map((product, index) => (
               <div className="col" key={index}>
                 <div className="card h-100 "  style={{ backgroundColor: "#FFECEC", important: "true" }}  >  
-                  <img src={product.imgSrc} className="card-img-top p-3" alt={product.name} />
+                   {/* Image Slider */}
+                   <ImageSlider images={Array.isArray(product.imgSrc) ? product.imgSrc : [product.imgSrc]} />
+
+
+                  {/* <img src={product.imgSrc} className="card-img-top p-3" alt={product.name} /> */}
                   <div className="card-body text-start">
                     <h5 className="card-title fw-bold">{product.name}</h5>
                     <p className="mb-1 mt-2 small"><strong>Brand:</strong> {product.Brand}</p>

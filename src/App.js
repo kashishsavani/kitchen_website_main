@@ -9,6 +9,8 @@ import Product from "./components/Product";
 import ReviewCarousel from "./components/ReviewCarousel";
 import FAQ from "./components/FAQ";
 import Wave from "./components/Wave";
+import "bootstrap/dist/css/bootstrap.min.css";
+
 
 
 function App() {
