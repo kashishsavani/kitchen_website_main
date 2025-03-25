@@ -130,15 +130,15 @@ const laddleImages = [
 ];
 
 const handle = [
-  ["/img/Wooden Handle Spatula/3+15/1.jpg","/img/Wooden Handle Spatula/3+15/2.png","/img/Wooden Handle Spatula/3+15/3.jpg","/img/Wooden Handle Spatula/3+15/4.jpg","/img/Wooden Handle Spatula/3+15/5.jpg"],
-  ["/img/Wooden Handle Spatula/3+20/1.jpg","/img/Wooden Handle Spatula/3+20/2.png","/img/Wooden Handle Spatula/3+20/3.jpg","/img/Wooden Handle Spatula/3+20/4.jpg","/img/Wooden Handle Spatula/3+20/5.jpg"],
-  ["/img/Wooden Handle Spatula/3+25/1.jpg","/img/Wooden Handle Spatula/3+25/2.png","/img/Wooden Handle Spatula/3+25/3.jpg","/img/Wooden Handle Spatula/3+25/4.jpg","/img/Wooden Handle Spatula/3+25/5.jpg"],
-  ["/img/Wooden Handle Spatula/3+30/1.jpg","/img/Wooden Handle Spatula/3+30/2.png","/img/Wooden Handle Spatula/3+30/3.jpg","/img/Wooden Handle Spatula/3+30/4.jpg","/img/Wooden Handle Spatula/3+30/5.jpg"],
-  ["/img/Wooden Handle Spatula/4+36/1.jpg","/img/Wooden Handle Spatula/4+36/2.jpg","/img/Wooden Handle Spatula/4+36/3.jpg","/img/Wooden Handle Spatula/4+36/4.jpg","/img/Wooden Handle Spatula/4+36/5.jpg"],
+  ["/img/3+15-1/1.jpg","/img/3+15-1/2.png","/img/3+15-1/3.jpg","/img/3+15-1/4.jpg","/img/3+15-1/5.jpg"],
+  ["/img/3+20-1/1.jpg","/img/3+20-1/2.png","/img/3+20-1/3.jpg","/img/3+20-1/4.jpg","/img/3+20-1/5.jpg"],
+  ["/img/3+25-1/1.jpg","/img/3+25-1/2.png","/img/3+25-1/3.jpg","/img/3+25-1/4.jpg","/img/3+25-1/5.jpg"],
+  ["/img/3+30-1/1.jpg","/img/3+30-1/2.png","/img/3+30-1/3.jpg","/img/3+30-1/4.jpg","/img/3+30-1/5.jpg"],
+  ["/img/4+36-1/1.jpg","/img/4+36-1/2.jpg","/img/4+36-1/3.jpg","/img/4+36-1/4.jpg","/img/4+36-1/5.jpg"],
   // "/img/All Size 25 1 (1).png",
-  ["/img/Wooden Handle Spatula/5+44/1.jpg","/img/Wooden Handle Spatula/5+44/2.jpg","/img/Wooden Handle Spatula/5+44/3.jpg","/img/Wooden Handle Spatula/5+44/4.jpg","/img/All Size 15 2.png"],
-  ["/img/Wooden Handle Spatula/6+51/1.jpg","/img/Wooden Handle Spatula/6+51/2.jpg","/img/Wooden Handle Spatula/6+51/3.jpg","/img/Wooden Handle Spatula/6+51/4.jpg","/img/All Size 16 1 (1).png"],
-  ["/img/Wooden Handle Spatula/5+44/1.jpg","/img/Wooden Handle Spatula/3+25/4.jpg","/img/All Size 17 1 (1).png"],
+  ["/img/5+44-1/1.jpg","/img/5+44-1/2.jpg","/img/5+44-1/3.jpg","/img/5+44-1/4.jpg","/img/All Size 15 2.png"],
+  ["/img/11.jpg","/img/41.jpg","/img/31.jpg","/img/All Size 16 1 (1).png"],
+  ["/img/5+44/1.jpg","/img/3+25/4.jpg","/img/All Size 17 1 (1).png"],
   
   
 ];
