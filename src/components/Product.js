@@ -145,18 +145,18 @@ const handle = [
 
 const Goti = [
  
-  ["/img/Goti Spatula/3+15/1.jpg","/img/Goti Spatula/3+15/2.png","/img/Goti Spatula/3+15/3.jpg","/img/Goti Spatula/3+15/4.jpg","/img/Goti Spatula/3+15/5.jpg"],
-  ["/img/Goti Spatula/3+20/1.jpg","/img/Goti Spatula/3+20/2.png","/img/Goti Spatula/3+20/3.jpg","/img/Goti Spatula/3+20/4.jpg","/img/Goti Spatula/3+20/5.jpg"],
-  ["/img/Goti Spatula/3+25/1.jpg","/img/Goti Spatula/3+25/2.png","/img/Goti Spatula/3+25/3.jpg","/img/Goti Spatula/3+25/4.jpg","/img/Goti Spatula/3+25/5.jpg"],
- ["/img/Goti Spatula/3+30/1.jpg","/img/Goti Spatula/3+30/2.png","/img/Goti Spatula/3+30/3.jpg","/img/Goti Spatula/3+30/4.jpg","/img/Goti Spatula/3+30/5.jpg"],
-  ["/img/Goti Spatula/4+27/1.jpg","/img/Goti Spatula/4+27/2.jpg","/img/Goti Spatula/4+27/3.jpg","/img/Goti Spatula/4+27/4.jpg","/img/Goti Spatula/4+27/5.jpg"],
-  ["/img/Goti Spatula/4+33/1.jpg","/img/Goti Spatula/4+33/2.jpg","/img/Goti Spatula/4+33/3.jpg","/img/Goti Spatula/4+33/4.jpg","/img/Goti Spatula/4+33/5.jpg"],
-  ["/img/Goti Spatula/4+39/1.jpg","/img/Goti Spatula/4+39/2.jpg","/img/Goti Spatula/4+39/3.jpg","/img/Goti Spatula/4+39/4.jpg","/img/Goti Spatula/4+39/5.jpg"],
-  ["/img/Goti Spatula/5+39/1.jpg","/img/Goti Spatula/5+39/2.jpg","/img/Goti Spatula/5+39/3.jpg","/img/Goti Spatula/5+39/4.jpg","/img/Goti Spatula/5+39/5.jpg"],
-  ["/img/Goti Spatula/5+44/1.jpg","/img/Goti Spatula/5+44/2.jpg","/img/Goti Spatula/5+44/3.jpg","/img/Goti Spatula/5+44/4.jpg","/img/Goti Spatula/5+44/5.jpg"],
-  ["/img/Goti Spatula/5+44/1.jpg","/img/Goti Spatula/5+44/2.jpg","/img/Goti Spatula/5+44/3.jpg","/img/Goti Spatula/5+44/4.jpg","/img/Goti Spatula/5+44/5.jpg"],
-  ["/img/Goti Spatula/6+52/1.jpg","/img/Goti Spatula/6+52/2.jpg","/img/Goti Spatula/6+52/3.jpg","/img/Goti Spatula/6+52/4.jpg","/img/Goti Spatula/6+52/5.jpg"],
-  ["/img/Goti Spatula/6+42/1.jpg","/img/Goti Spatula/6+42/2.jpg","/img/Goti Spatula/6+42/3.jpg","/img/Goti Spatula/6+42/4.jpg","/img/Goti Spatula/6+42/5.jpg"], 
+  ["/img/3+15/1.jpg","/img/3+15/2.png","/img/3+15/3.jpg","/img/3+15/4.jpg","/img/3+15/5.jpg"],
+  ["/img/3+20/1.jpg","/img/3+20/2.png","/img/3+20/3.jpg","/img/3+20/4.jpg","/img/3+20/5.jpg"],
+  ["/img/3+25/1.jpg","/img/3+25/2.png","/img/3+25/3.jpg","/img/3+25/4.jpg","/img/3+25/5.jpg"],
+ ["/img/3+30/1.jpg","/img/3+30/2.png","/img/3+30/3.jpg","/img/3+30/4.jpg","/img/3+30/5.jpg"],
+  ["/img/4+27/1.jpg","/img/4+27/2.jpg","/img/4+27/3.jpg","/img/4+27/4.jpg","/img/4+27/5.jpg"],
+  ["/img/4+33/1.jpg","/img/4+33/2.jpg","/img/4+33/3.jpg","/img/4+33/4.jpg","/img/4+33/5.jpg"],
+  ["/img/4+39/1.jpg","/img/4+39/2.jpg","/img/4+39/3.jpg","/img/4+39/4.jpg","/img/4+39/5.jpg"],
+  ["/img/5+39/1.jpg","/img/5+39/2.jpg","/img/5+39/3.jpg","/img/5+39/4.jpg","/img/5+39/5.jpg"],
+  ["/img/5+44/1.jpg","/img/5+44/2.jpg","/img/5+44/3.jpg","/img/5+44/4.jpg","/img/5+44/5.jpg"],
+  ["/img/5+44/1.jpg","/img/5+44/2.jpg","/img/5+44/3.jpg","/img/5+44/4.jpg","/img/5+44/5.jpg"],
+  ["/img/6+52/1.jpg","/img/6+52/2.jpg","/img/6+52/3.jpg","/img/6+52/4.jpg","/img/6+52/5.jpg"],
+  ["/img/6+42/1.jpg","/img/6+42/2.jpg","/img/6+42/3.jpg","/img/6+42/4.jpg","/img/6+42/5.jpg"], 
 ];
 
 const stic = [
