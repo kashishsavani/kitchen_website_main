@@ -197,69 +197,77 @@ const Product = () => {
 
     const repeatProducts = () => {
       const repeated = [];
-      let repeatCount = 8;
     
-      if (selectedCategory === "stainless steel Goti Spatula") {
-        repeatCount = 12;
-      } else if (selectedCategory === "stainless steel wooden handle laddle With Back Support") {
-        repeatCount = 6;
-      } else if (selectedCategory === "stainless steel Walking Stick") {
-        repeatCount = 3;    //  3 cards for Walking Stick
+      if (selectedCategory === "All") {
+        // Combine all categories with their respective repeat counts
+        const categories = [
+          { name: "stainless steel Goti Spatula", count: 12 },
+          { name: "stainless steel wooden handle laddle With Back Support", count: 6 },
+          { name: "stainless steel Walking Stick", count: 3 },
+          { name: "stainless steel wooden handle Spatula", count: 8 }  // Default repeatCount
+        ];
+    
+        categories.forEach((cat) => {
+          const filtered = products.filter((p) => p.name === cat.name);
+          let repeatedCat = [];
+    
+          while (repeatedCat.length < cat.count) {
+            repeatedCat.push(...filtered);
+          }
+    
+          repeated.push(...repeatedCat.slice(0, cat.count));
+        });
+    
+      } else {
+        // Specific category filtering
+        let repeatCount = 8;
+    
+        if (selectedCategory === "stainless steel Goti Spatula") {
+          repeatCount = 12;
+        } else if (selectedCategory === "stainless steel wooden handle laddle With Back Support") {
+          repeatCount = 6;
+        } else if (selectedCategory === "stainless steel Walking Stick") {
+          repeatCount = 3;
+        }
+    
+        while (repeated.length < repeatCount) {
+          repeated.push(...filteredProducts);
+        }
       }
     
-      while (repeated.length < repeatCount) {
-        repeated.push(...filteredProducts);
-      }
-    
-      const displayedProducts = repeated.slice(0, repeatCount);
-    
-      //  Combine both functionalities in one mapping function
-      const finalProducts = displayedProducts.map((product, index) => {
+      const displayedProducts = repeated.map((product, index) => {
         let updatedProduct = { ...product };
     
-        //  Apply unique laddle images
-        if (selectedCategory === "stainless steel wooden handle laddle With Back Support") {
+        // Image Mapping
+        if (product.name === "stainless steel wooden handle laddle With Back Support") {
           updatedProduct.imgSrc = laddleImages[index % laddleImages.length];
-        } else if (selectedCategory === "stainless steel wooden handle Spatula") {
-          // ✅ Sequential mapping without repetition
-          if (index < handle.length) {
-            updatedProduct.imgSrc = handle[index]; 
-          } else {
-            // Fallback to prevent repetition
-            updatedProduct.imgSrc = handle[index % handle.length];
-          }
-        }else if (selectedCategory === "stainless steel Goti Spatula") {
-          // updatedProduct.imgSrc = Goti[index % laddleImages.length];
+        } else if (product.name === "stainless steel wooden handle Spatula") {
+          updatedProduct.imgSrc = handle[index % handle.length];
+        } else if (product.name === "stainless steel Goti Spatula") {
           updatedProduct.imgSrc = Goti[index % Goti.length];
-
-        }
-        else if (selectedCategory === "stainless steel Walking Stick") {
-          updatedProduct.imgSrc = stic[index % laddleImages.length];
+        } else if (product.name === "stainless steel Walking Stick") {
+          updatedProduct.imgSrc = stic[index % stic.length];
         }
     
-        // Apply random sizes only for Spatula categories
-        if (selectedCategory === "stainless steel Goti Spatula") {
+        // Size & Length Mapping
+        if (product.name === "stainless steel Goti Spatula") {
           updatedProduct.Size = sizeOptions[index % sizeOptions.length];
-          updatedProduct.length = length[index % length.length];  
-        } else if (selectedCategory === "stainless steel wooden handle Spatula") {
+          updatedProduct.length = length[index % length.length];
+        } else if (product.name === "stainless steel wooden handle Spatula") {
           updatedProduct.Size = sizeOptionss[index % sizeOptionss.length];
           updatedProduct.length = lengthh[index % lengthh.length];
-        }else if (selectedCategory === "stainless steel wooden handle laddle With Back Support") {
-          // updatedProduct.Size = sizeOptionss[index % sizeOptionss.length];
+        } else if (product.name === "stainless steel wooden handle laddle With Back Support") {
           updatedProduct.length = lengthhh[index % lengthhh.length];
-        }
-        else if (selectedCategory === "stainless steel Walking Stick") {
-          // updatedProduct.Size = sizeOptionss[index % sizeOptionss.length];
+        } else if (product.name === "stainless steel Walking Stick") {
           updatedProduct.length = lengthhhh[index % lengthhhh.length];
         }
-        
     
         return updatedProduct;
       });
     
-      return finalProducts;
+      return displayedProducts;
     };
-    
+        
     const displayedProducts = repeatProducts();
   return (
     <>
