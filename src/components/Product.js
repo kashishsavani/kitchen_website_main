@@ -140,6 +140,7 @@ const handle = [
   ["/img/Wooden Handle Spatula/6+51/1.jpg","/img/Wooden Handle Spatula/6+51/2.jpg","/img/Wooden Handle Spatula/6+51/3.jpg","/img/Wooden Handle Spatula/6+51/4.jpg","/img/All Size 16 1 (1).png"],
   ["/img/Wooden Handle Spatula/5+44/1.jpg","/img/Wooden Handle Spatula/3+25/4.jpg","/img/All Size 17 1 (1).png"],
   
+  
 ];
 
 const Goti = [
