@@ -145,7 +145,7 @@ const handle = [
 
 const Goti = [
  
-  ["/img/3+15/1.jpg","/img/3+15/2.png","/img/3+15/3.jpg","/img/3+15/4.jpg","/img/3+15/5.jpg"],
+  ["/img/1.jpg","/img/2.png","/img/3.jpg","/img/4.jpg","/img/5.jpg"],
   ["/img/3+20/1.jpg","/img/3+20/2.png","/img/3+20/3.jpg","/img/3+20/4.jpg","/img/3+20/5.jpg"],
   ["/img/3+25/1.jpg","/img/3+25/2.png","/img/3+25/3.jpg","/img/3+25/4.jpg","/img/3+25/5.jpg"],
  ["/img/3+30/1.jpg","/img/3+30/2.png","/img/3+30/3.jpg","/img/3+30/4.jpg","/img/3+30/5.jpg"],
