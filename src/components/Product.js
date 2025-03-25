@@ -129,14 +129,15 @@ const laddleImages = [
 
 const handle = [
   "/img/All Size 19 5.png",
-  "/img/All Size 16 1 (1).png",
+  "/img/All Size 20 2.png",
   "/img/All Size 21 1.png",
   "/img/All Size 22 1.png",
   "/img/All Size 18 1 (1).png",
   // "/img/All Size 25 1 (1).png",
+  "/img/All Size 15 2.png",
   "/img/All Size 16 1 (1).png",
   "/img/All Size 17 1 (1).png",
-
+  
 ];
 
 const Goti = [
