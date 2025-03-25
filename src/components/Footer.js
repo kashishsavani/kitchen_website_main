@@ -33,13 +33,13 @@ const Footer = () => {
           <div className="col-lg-4 contactinfo footercontact col-md-6 mb-4">
             <h2>Contact Info</h2>
             <p className="location-info">
-  <HiOutlineLocationMarker className="text-danger me-2" /> 4-Patel Nagar, 80 Feet Road, Rajkot
+  <HiOutlineLocationMarker className="text-danger me-2" /> 4-Patel Nagar,80-Feet Road,Near Sorthiyavadi Circle, Rajkot-360002
 </p>
             <p>
-              <FiPhone icon={faPhone} className=" text-danger me-2" /> 75670 52199
+              <FiPhone icon={faPhone} className=" text-danger me-2" /> +917567052199
             </p>
             <p>
-              <CiMail icon={faEnvelope} className="text-danger me-2" /> jyotiengineers@gmail.com
+              <CiMail icon={faEnvelope} className="text-danger me-2" /> info.jyotiengineers@gmail.com
             </p>
           </div>
 

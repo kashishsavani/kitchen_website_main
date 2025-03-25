@@ -69,7 +69,7 @@ const Navbar = () => {
           {/* Contact Details */}
           <div className="d-md-flex flex-column flex-md-row align-items-center text-center text-md-end mt-3 mt-md-0">
             <span className="me-md-3 d-block text-dark fw-bold">
-              <FiPhone icon={faPhone} className="me-2 fw-bold fs-5 text-danger" /> 9898765432
+              <FiPhone icon={faPhone} className="me-2 fw-bold fs-5 text-danger" /> 75670 52199
             </span>
             <span className="d-block text-dark fw-bold">
               <HiOutlineLocationMarker icon={faLocationDot} className="me-2 fw-bold fs-5 text-danger " /> 4-A, Patel Nagar, Rajkot
