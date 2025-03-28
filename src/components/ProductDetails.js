@@ -2,6 +2,7 @@ import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import ImageSlider from "./ImageSlider";  // Import the ImageSlider component
 import { RiWhatsappFill } from "react-icons/ri";
+import "../ProductDetails.css";
 
 const ProductDetails = () => {
   const location = useLocation();
@@ -13,16 +14,18 @@ const ProductDetails = () => {
   }
 
   return (
+
+    
     <div className="container mt-4">
       <button className="btn btn-secondary mb-3" onClick={() => navigate(-1)}>
         ← Back
       </button>
 
-      <div className="row g-4">
+      <div className="row g-4 d-flex flex-column align-items-center justify-content-center">
         {/* Image Slider Section */}
-        <div className="col-md-3">
+        <div className="col-md-3 col-sm-6 ">
           <div className="card h-100">
-            <div className="card-body d-flex align-items-center justify-content-center">
+            <div className="card-body  full-size">
               {/* Display the image slider */}
               <ImageSlider images={Array.isArray(product.imgSrc) ? product.imgSrc : [product.imgSrc]} />
             </div>
@@ -51,6 +54,7 @@ const ProductDetails = () => {
         </div>
       </div>
     </div>
+   
   );
 };
 
