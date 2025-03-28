@@ -340,7 +340,7 @@ const Product = () => {
                     <h5 className="card-title fw-bold">{product.name}</h5>
                     <p className="mb-1 mt-2 small d-none"><strong>Brand:</strong> {product.Brand}</p>
                     <p className="mb-1 small d-none"><strong>Steel Grade:</strong> {product.SteelGrade}</p>
-                    {product.Size && <p className="mb-1 small d-none"><strong>Size:</strong> {product.Size}</p>}
+                    {product.Size && <p className="mb-1 small "><strong>Size:</strong> {product.Size}</p>}
 {product.length &&<p className="mb-1 small d-none"><strong>Length:</strong> {product.length}</p>}
 
                     {product.Handle && <p className="mb-1 small d-none"><strong>Handle:</strong> {product.Handle}</p>}
