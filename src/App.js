@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import "./App.css";
 import Layout from "./components/Layout";
 import HeroSection from "./components/Section1";
@@ -10,14 +10,18 @@ import ReviewCarousel from "./components/ReviewCarousel";
 import FAQ from "./components/FAQ";
 import Wave from "./components/Wave";
 import "bootstrap/dist/css/bootstrap.min.css";
+import ProductDetails from "./components/ProductDetails";
 
+const AppContent = () => {
+  const location = useLocation();
 
+  // Add conditional CSS class
+  const noFooter = location.pathname.includes("/product/");
 
-function App() {
   return (
-    <Router>  {/* Ensure the entire App is inside BrowserRouter */}
+    <div className={noFooter ? "no-footer" : ""}>
       <Routes>
-        {/* Layout wraps all routes to provide Navbar/Footer */}
+        {/* Layout wraps all main routes */}
         <Route path="/" element={<Layout />}>
           <Route index element={
             <>
@@ -31,12 +35,21 @@ function App() {
             </>
           } />
           <Route path="about" element={<AboutSection />} />
-          <Route path="product" element={<Product />} />
           <Route path="review" element={<ReviewCarousel />} />
           <Route path="faq" element={<FAQ />} />
           
+          {/* Product Details without footer */}
+          <Route path="product/:id" element={<ProductDetails />} />
         </Route>
       </Routes>
+    </div>
+  );
+};
+
+function App() {
+  return (
+    <Router>
+      <AppContent />
     </Router>
   );
 }

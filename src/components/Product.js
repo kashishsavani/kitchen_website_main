@@ -10,6 +10,7 @@ import Wave from "./Wave";
 import "../Product.css";
 import { RiWhatsappFill } from "react-icons/ri";
 import ImageSlider from "./ImageSlider";
+import { useNavigate } from "react-router-dom"
 
 const products = [
   {
@@ -193,6 +194,13 @@ const Product = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
   const location = useLocation();
 
+
+  const navigate = useNavigate();
+
+  const handleCardClick = (product) => {
+    navigate(`/product/${product.id}`, { state: { product } }); 
+  };
+
   // 🛠️ Filter products
   const filteredProducts = selectedCategory === "All"
     ? products
@@ -321,25 +329,25 @@ const Product = () => {
           {/* Product Cards */}
           <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mt-4">
             {displayedProducts.map((product, index) => (
-              <div className="col" key={index}>
+              <div className="col" onClick={() => handleCardClick(product)} style={{ cursor: "pointer" }} key={index}>
                 <div className="card h-100 "  style={{ backgroundColor: "#FFECEC", important: "true" }}  >  
                    {/* Image Slider */}
                    <ImageSlider images={Array.isArray(product.imgSrc) ? product.imgSrc : [product.imgSrc]} />
 
 
                   {/* <img src={product.imgSrc} className="card-img-top p-3" alt={product.name} /> */}
-                  <div className="card-body text-start">
+                  <div className="card-body text-start ">
                     <h5 className="card-title fw-bold">{product.name}</h5>
-                    <p className="mb-1 mt-2 small"><strong>Brand:</strong> {product.Brand}</p>
-                    <p className="mb-1 small"><strong>Steel Grade:</strong> {product.SteelGrade}</p>
-                    {product.Size && <p className="mb-1 small"><strong>Size:</strong> {product.Size}</p>}
-{product.length &&<p className="mb-1 small"><strong>Length:</strong> {product.length}</p>}
+                    <p className="mb-1 mt-2 small d-none"><strong>Brand:</strong> {product.Brand}</p>
+                    <p className="mb-1 small d-none"><strong>Steel Grade:</strong> {product.SteelGrade}</p>
+                    {product.Size && <p className="mb-1 small d-none"><strong>Size:</strong> {product.Size}</p>}
+{product.length &&<p className="mb-1 small d-none"><strong>Length:</strong> {product.length}</p>}
 
-                    {product.Handle && <p className="mb-1 small"><strong>Handle:</strong> {product.Handle}</p>}
-                    {product.HandleType && <p className="mb-1 small"><strong>Handle Type:</strong> {product.HandleType}</p>}
-                    <p className="mb-1 small"><strong>Finish:</strong> {product.Finish}</p>
-                    <p className="mb-1 small"><strong>Packing:</strong> {product.Packing}</p>
-                    <p className="mb-1 small"><strong>MOQ:</strong> {product.MOQ}</p>
+                    {product.Handle && <p className="mb-1 small d-none"><strong>Handle:</strong> {product.Handle}</p>}
+                    {product.HandleType && <p className="mb-1 small d-none"><strong>Handle Type:</strong> {product.HandleType}</p>}
+                    <p className="mb-1 small d-none"><strong>Finish:</strong> {product.Finish}</p>
+                    <p className="mb-1 small d-none"><strong>Packing:</strong> {product.Packing}</p>
+                    <p className="mb-1 small d-none"><strong>MOQ:</strong> {product.MOQ}</p>
                     
                     <a href="#" className="btn btn-light fw-bold w-100 small-text">
                       <RiWhatsappFill className="text-success" /> Order on WhatsApp
