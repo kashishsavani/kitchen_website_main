@@ -1,6 +1,6 @@
 import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import ImageSlider from "./ImageSlider";  // Import the ImageSlider component
+import ImageSlider from "./ImageSlider"; 
 import { RiWhatsappFill } from "react-icons/ri";
 import "../ProductDetails.css";
 
@@ -14,12 +14,51 @@ const ProductDetails = () => {
   }
 
   return (
-
+<div
+      className="container mt-4"
+      style={{
+        position: "relative",         
+        backgroundImage:  `url('/img/Jyoti_Eng_Logo.jpg')`,  
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        minHeight: "100vh",            
+        width: "100%",               
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        padding: "0",               
+      }}
+    >
+         <div
+         style={{
+            position: "fixed",         
+            top: 0,
+            left: 0,
+            width: "100vw",           
+            height: "100vh",           
+            backgroundColor: "rgba(0, 0, 0, 0.6)",  
+            zIndex: 0,               
+          }}
+      ></div>
     
     <div className="container mt-4">
-      <button className="btn btn-secondary mb-3" onClick={() => navigate(-1)}>
+      <button
+        className="btn btn-light fw-bold"
+        onClick={() => navigate(-1)}
+        style={{
+          position: "relative",         
+          top: "20px",               
+          left: "20px",               
+          zIndex: 2,                  
+          padding: "10px 20px",
+          fontSize: "16px",
+          boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",  
+        }}
+      >
         ← Back
       </button>
+      
 
       <div className="row g-4 d-flex flex-column align-items-center justify-content-center">
         {/* Image Slider Section */}
@@ -35,7 +74,7 @@ const ProductDetails = () => {
         {/* Product Details Section */}
         <div className="col-md-6 col-sm-12">
           <div className="card h-100 ">
-            <div className="card-body one d-flex align-items-start justify-content-start flex-column">
+            <div className="card-body  d-flex align-items-start justify-content-start flex-column">
               <h2>{product.name}</h2>
               <p><strong>Brand:</strong> {product.Brand}</p>
               <p><strong>Steel Grade:</strong> {product.SteelGrade}</p>
@@ -54,7 +93,7 @@ const ProductDetails = () => {
         </div>
       </div>
     </div>
-   
+   </div>
   );
 };
 
