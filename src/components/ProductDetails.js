@@ -23,19 +23,19 @@ const ProductDetails = () => {
 
       <div className="row g-4 d-flex flex-column align-items-center justify-content-center">
         {/* Image Slider Section */}
-        <div className="col-md-3 col-sm-6 ">
+        <div className="col-md-6 col-lg-3">
           <div className="card h-100">
-            <div className="card-body  full-size">
+            <div className="card-body full-size">
               {/* Display the image slider */}
-              <ImageSlider images={Array.isArray(product.imgSrc) ? product.imgSrc : [product.imgSrc]} />
+              <ImageSlider className="col-sm-12" images={Array.isArray(product.imgSrc) ? product.imgSrc : [product.imgSrc]} />
             </div>
           </div>
         </div>
 
         {/* Product Details Section */}
-        <div className="col-md-6">
-          <div className="card h-100">
-            <div className="card-body d-flex align-items-start justify-content-start flex-column">
+        <div className="col-md-6 col-sm-12">
+          <div className="card h-100 ">
+            <div className="card-body one d-flex align-items-start justify-content-start flex-column">
               <h2>{product.name}</h2>
               <p><strong>Brand:</strong> {product.Brand}</p>
               <p><strong>Steel Grade:</strong> {product.SteelGrade}</p>
