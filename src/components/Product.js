@@ -75,7 +75,7 @@ const products = [
     Finish: "Buff Finish smooth surfaces",
     Packing: "Packing with Ld Plastic Material or scratch Roll",
     MOQ: "6 Piece",
-    imgSrc: "/img/All Size 23 2.png"
+    imgSrc: ["/img/All Size 23 2.png"]
   },
   {
     id: 6,

@@ -39,6 +39,7 @@ const AppContent = () => {
           <Route path="faq" element={<FAQ />} />
           
           {/* Product Details without footer */}
+          <Route path="product" element={<Product />} />
           <Route path="product/:id" element={<ProductDetails />} />
         </Route>
       </Routes>
